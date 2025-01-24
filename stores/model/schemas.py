@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional
-from model.data_classes import (
+from stores.model.data_classes import (
     ProtocolEnum,
     CountryEnum
 )

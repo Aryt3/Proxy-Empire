@@ -1,7 +1,4 @@
-import requests
-import json
-import aiohttp
-import asyncio
+import requests, aiohttp, json, asyncio
 from aiohttp_socks import ProxyConnector
 from aiohttp import ClientTimeout
 
@@ -27,9 +24,9 @@ class ProxyScraper:
         pass
 
     async def collect_proxies(self):
-        """
+        '''
         Collect all proxies from URLs and check their usability.
-        """
+        '''
         try:
             tasks = []
             proxies = [proxy.strip() for url in self.http_proxy_urls for proxy in requests.get(url).text.splitlines()]
@@ -42,6 +39,6 @@ class ProxyScraper:
 
             return self.working_proxies
         except Exception as e:
-            print(f"Error in proxy collection: {e}")
+            print(f'Error in proxy collection: {e}')
             return self.working_proxies
 

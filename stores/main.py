@@ -1,22 +1,22 @@
 from sqlalchemy.future import select
-from sqlalchemy.orm import aliased
 from sqlalchemy.sql import and_
-from model.database import DBAsyncSession
-from model.models import (
+from stores.model.database import DBAsyncSession
+from stores.model.models import (
     Proxy,
     Update
 )
-from model.schemas import (
+from stores.model.schemas import (
     Proxy_Schema,
     Proxy_Filter_Schema,
     Update_Schema
 )
-from model.data_classes import (
+from stores.model.data_classes import (
     ProtocolEnum,
     CountryEnum
 )
 from utils import handle_exceptions
 from enum import Enum
+
 
 class ProxyStore:
 

@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, BigInteger, Boolean, Enum
 from sqlalchemy.ext.declarative import declarative_base
 from uuid import uuid4
-from model.data_classes import (
+from stores.model.data_classes import (
     ProtocolEnum,
     CountryEnum
 )
