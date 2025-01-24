@@ -7,7 +7,7 @@ countries_data = json.load(open('./data/countries.jsonc', 'r'))
 # Extract all country iso codes from JSON
 country_codes = [countries_data[region][country]['iso-3166-2'].lower() for region in countries_data for country in countries_data[region]]
 
-CountryEnum = Enum('CountryEnum', [(code.upper(), code) for code in list(set(country_codes))])
+CountryEnum = Enum('CountryEnum', [(code.upper(), code) for code in list(set(country_codes))] + [("NONE", None)])
 
 
 class ProtocolEnum(Enum):

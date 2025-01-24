@@ -1,1277 +1,1271 @@
 {
-    "afrika": {
-      "Algeria": {
-        "iso-3166-2": "DZ",
-        "iso-3166-3": "DZA",
-        "domain": ".dz"
-      },
-      "Angola": {
-        "iso-3166-2": "AO",
-        "iso-3166-3": "AGO",
-        "domain": ".ao"
-      },
-      "Ascension": {
-        "iso-3166-2": "SH",
-        "iso-3166-3": "SHN",
-        "domain": ".sh"
-      },
-      "Benin": {
-        "iso-3166-2": "BJ",
-        "iso-3166-3": "BEN",
-        "domain": ".bj"
-      },
-      "Botswana": {
-        "iso-3166-2": "BW",
-        "iso-3166-3": "BWA",
-        "domain": ".bw"
-      },
-      "Burkina Faso": {
-        "iso-3166-2": "BF",
-        "iso-3166-3": "BFA",
-        "domain": ".bf"
-      },
-      "Burundi": {
-        "iso-3166-2": "BI",
-        "iso-3166-3": "BDI",
-        "domain": ".bi"
-      },
-      "Cameroon": {
-        "iso-3166-2": "CM",
-        "iso-3166-3": "CMR",
-        "domain": ".cm"
-      },
-      "Cape Verde Islands": {
-        "iso-3166-2": "CV",
-        "iso-3166-3": "CPV",
-        "domain": ".cv"
-      },
-      "Central African Republic": {
-        "iso-3166-2": "CF",
-        "iso-3166-3": "CAF",
-        "domain": ".cf"
-      },
-      "Chad Republic": {
-        "iso-3166-2": "TD",
-        "iso-3166-3": "TCD",
-        "domain": ".td"
-      },
-      "Comoros": {
-        "iso-3166-2": "KM",
-        "iso-3166-3": "COM",
-        "domain": ".km"
-      },
-      "Congo": {
-        "iso-3166-2": "CG",
-        "iso-3166-3": "COG",
-        "domain": ".cg"
-      },
-      "Dem. Republic of the Congo": {
-        "iso-3166-2": "CD",
-        "iso-3166-3": "COD",
-        "domain": ".cd"
-      },
-      "Djibouti": {
-        "iso-3166-2": "DJ",
-        "iso-3166-3": "DJI",
-        "domain": ".dj"
-      },
-      "Egypt": {
-        "iso-3166-2": "EG",
-        "iso-3166-3": "EGY",
-        "domain": ".eg"
-      },
-      "Equatorial Guinea": {
-        "iso-3166-2": "GQ",
-        "iso-3166-3": "GNQ",
-        "domain": ".gq"
-      },
-      "Eritrea": {
-        "iso-3166-2": "ER",
-        "iso-3166-3": "ERI",
-        "domain": ".er"
-      },
-      "eSwatini": {
-        "iso-3166-2": "SZ",
-        "iso-3166-3": "SWZ",
-        "domain": ".sz"
-      },
-      "Ethiopia": {
-        "iso-3166-2": "ET",
-        "iso-3166-3": "ETH",
-        "domain": ".et"
-      },
-      "Gabon Republic": {
-        "iso-3166-2": "GA",
-        "iso-3166-3": "GAB",
-        "domain": ".ga"
-      },
-      "Gambia": {
-        "iso-3166-2": "GM",
-        "iso-3166-3": "GMB",
-        "domain": ".gm"
-      },
-      "Ghana": {
-        "iso-3166-2": "GH",
-        "iso-3166-3": "GHA",
-        "domain": ".gh"
-      },
-      "Guinea": {
-        "iso-3166-2": "GN",
-        "iso-3166-3": "GIN",
-        "domain": ".gn"
-      },
-      "Guinea-Bissau": {
-        "iso-3166-2": "GW",
-        "iso-3166-3": "GNB",
-        "domain": ".gw"
-      },
-      "Ivory Coast": {
-        "iso-3166-2": "CI",
-        "iso-3166-3": "CIV",
-        "domain": ".ci"
-      },
-      "Kenya": {
-        "iso-3166-2": "KE",
-        "iso-3166-3": "KEN",
-        "domain": ".ke"
-      },
-      "Lesotho": {
-        "iso-3166-2": "LS",
-        "iso-3166-3": "LSO",
-        "domain": ".ls"
-      },
-      "Liberia": {
-        "iso-3166-2": "LR",
-        "iso-3166-3": "LBR",
-        "domain": ".lr"
-      },
-      "Libya": {
-        "iso-3166-2": "LY",
-        "iso-3166-3": "LBY",
-        "domain": ".ly"
-      },
-      "Madagascar": {
-        "iso-3166-2": "MG",
-        "iso-3166-3": "MDG",
-        "domain": ".mg"
-      },
-      "Malawi": {
-        "iso-3166-2": "MW",
-        "iso-3166-3": "MWI",
-        "domain": ".mw"
-      },
-      "Mali Republic": {
-        "iso-3166-2": "ML",
-        "iso-3166-3": "MLI",
-        "domain": ".ml"
-      },
-      "Mauritania": {
-        "iso-3166-2": "MR",
-        "iso-3166-3": "MRT",
-        "domain": ".mr"
-      },
-      "Mauritius": {
-        "iso-3166-2": "MU",
-        "iso-3166-3": "MUS",
-        "domain": ".mu"
-      },
-      "Mayotte Island": {
-        "iso-3166-2": "YT",
-        "iso-3166-3": "MYT",
-        "domain": ".yt"
-      },
-      "Morocco": {
-        "iso-3166-2": "MA",
-        "iso-3166-3": "MAR",
-        "domain": ".ma"
-      },
-      "Mozambique": {
-        "iso-3166-2": "MZ",
-        "iso-3166-3": "MOZ",
-        "domain": ".mz"
-      },
-      "Namibia": {
-        "iso-3166-2": "NA",
-        "iso-3166-3": "NAM",
-        "domain": ".na"
-      },
-      "Niger Republic": {
-        "iso-3166-2": "NE",
-        "iso-3166-3": "NER",
-        "domain": ".ne"
-      },
-      "Nigeria": {
-        "iso-3166-2": "NG",
-        "iso-3166-3": "NGA",
-        "domain": ".ng"
-      },
-      "Principe": {
-        "iso-3166-2": "ST",
-        "iso-3166-3": "STP",
-        "domain": ".st"
-      },
-      "Reunion Island": {
-        "iso-3166-2": "RE",
-        "iso-3166-3": "REU",
-        "domain": ".re"
-      },
-      "Rwanda": {
-        "iso-3166-2": "RW",
-        "iso-3166-3": "RWA",
-        "domain": ".rw"
-      },
-      "Sao Tome": {
-        "iso-3166-2": "ST",
-        "iso-3166-3": "STP",
-        "domain": ".st"
-      },
-      "Senegal Republic": {
-        "iso-3166-2": "SN",
-        "iso-3166-3": "SEN",
-        "domain": ".sn"
-      },
-      "Seychelles": {
-        "iso-3166-2": "SC",
-        "iso-3166-3": "SYC",
-        "domain": ".sc"
-      },
-      "Sierra Leone": {
-        "iso-3166-2": "SL",
-        "iso-3166-3": "SLE",
-        "domain": ".sl"
-      },
-      "Somalia Republic": {
-        "iso-3166-2": "SO",
-        "iso-3166-3": "SOM",
-        "domain": ".so"
-      },
-      "South Africa": {
-        "iso-3166-2": "ZA",
-        "iso-3166-3": "ZAF",
-        "domain": ".za"
-      },
-      "South Sudan": {
-        "iso-3166-2": "SS",
-        "iso-3166-3": "SSD",
-        "domain": ".ss"
-      },
-      "St. Helena": {
-        "iso-3166-2": "SH",
-        "iso-3166-3": "SHN",
-        "domain": ".sh"
-      },
-      "Sudan": {
-        "iso-3166-2": "SD",
-        "iso-3166-3": "SDN",
-        "domain": ".sd"
-      },
-      "Swaziland": {
-        "iso-3166-2": "SZ",
-        "iso-3166-3": "SWZ",
-        "domain": ".sz"
-      },
-      "Tanzania": {
-        "iso-3166-2": "TZ",
-        "iso-3166-3": "TZA",
-        "domain": ".tz"
-      },
-      "Togo": {
-        "iso-3166-2": "TG",
-        "iso-3166-3": "TGO",
-        "domain": ".tg"
-      },
-      "Tunisia": {
-        "iso-3166-2": "TN",
-        "iso-3166-3": "TUN",
-        "domain": ".tn"
-      },
-      "Uganda": {
-        "iso-3166-2": "UG",
-        "iso-3166-3": "UGA",
-        "domain": ".ug"
-      },
-      "Zaire": {
-        "iso-3166-2": "CD",
-        "iso-3166-3": "COD",
-        "domain": ".cd"
-      },
-      "Zambia": {
-        "iso-3166-2": "ZM",
-        "iso-3166-3": "ZMB",
-        "domain": ".zm"
-      },
-      "Zanzibar": {
-        "iso-3166-2": "TZ",
-        "iso-3166-3": "TZA",
-        "domain": ".tz"
-      },
-      "Zimbabwe": {
-        "iso-3166-2": "ZW",
-        "iso-3166-3": "ZWE",
-        "domain": ".zw"
-      }
+  "afrika": {
+    "Algeria": {
+      "iso-3166-2": "DZ",
+      "iso-3166-3": "DZA",
+      "domain": ".dz"
     },
-    "antarctica": {
-      "Antarctica": {
-        "iso-3166-2": "AQ",
-        "iso-3166-3": "ATA",
-        "domain": ".aq"
-      }
+    "Angola": {
+      "iso-3166-2": "AO",
+      "iso-3166-3": "AGO",
+      "domain": ".ao"
     },
-    "asia": {
-      "Afghanistan": {
-        "iso-3166-2": "AF",
-        "iso-3166-3": "AFG",
-        "domain": ".af"
-      },
-      "Armenia": {
-        "iso-3166-2": "AM",
-        "iso-3166-3": "ARM",
-        "domain": ".am"
-      },
-      "Azerbaijan": {
-        "iso-3166-2": "AZ",
-        "iso-3166-3": "AZE",
-        "domain": ".az"
-      },
-      "Bahrain": {
-        "iso-3166-2": "BH",
-        "iso-3166-3": "BHR",
-        "domain": ".bh"
-      },
-      "Bangladesh": {
-        "iso-3166-2": "BD",
-        "iso-3166-3": "BGD",
-        "domain": ".bd"
-      },
-      "Bhutan": {
-        "iso-3166-2": "BT",
-        "iso-3166-3": "BTN",
-        "domain": ".bt"
-      },
-      "Brunei": {
-        "iso-3166-2": "BN",
-        "iso-3166-3": "BRN",
-        "domain": ".bn"
-      },
-      "Cambodia": {
-        "iso-3166-2": "KH",
-        "iso-3166-3": "KHM",
-        "domain": ".kh"
-      },
-      "China": {
-        "iso-3166-2": "CN",
-        "iso-3166-3": "CHN",
-        "domain": ".cn"
-      },
-      "Christmas Island": {
-        "iso-3166-2": "CX",
-        "iso-3166-3": "CXR",
-        "domain": ".cx"
-      },
-      "Cocos Islands": {
-        "iso-3166-2": "CC",
-        "iso-3166-3": "CCK",
-        "domain": ".cc"
-      },
-      "Diego Garcia": {
-        "iso-3166-2": "IO",
-        "iso-3166-3": "IOT",
-        "domain": ".io"
-      },
-      "Georgia": {
-        "iso-3166-2": "GE",
-        "iso-3166-3": "GEO",
-        "domain": ".ge"
-      },
-      "Hong Kong": {
-        "iso-3166-2": "HK",
-        "iso-3166-3": "HKG",
-        "domain": ".hk"
-      },
-      "India": {
-        "iso-3166-2": "IN",
-        "iso-3166-3": "IND",
-        "domain": ".in"
-      },
-      "Indonesia": {
-        "iso-3166-2": "ID",
-        "iso-3166-3": "IDN",
-        "domain": ".id"
-      },
-      "Iran": {
-        "iso-3166-2": "IR",
-        "iso-3166-3": "IRN",
-        "domain": ".ir"
-      },
-      "Iraq": {
-        "iso-3166-2": "IQ",
-        "iso-3166-3": "IRQ",
-        "domain": ".iq"
-      },
-      "Israel": {
-        "iso-3166-2": "IL",
-        "iso-3166-3": "ISR",
-        "domain": ".il"
-      },
-      "Japan": {
-        "iso-3166-2": "JP",
-        "iso-3166-3": "JPN",
-        "domain": ".jp"
-      },
-      "Jordan": {
-        "iso-3166-2": "JO",
-        "iso-3166-3": "JOR",
-        "domain": ".jo"
-      },
-      "Kazakhstan": {
-        "iso-3166-2": "KZ",
-        "iso-3166-3": "KAZ",
-        "domain": ".kz"
-      },
-      "Kuwait": {
-        "iso-3166-2": "KW",
-        "iso-3166-3": "KWT",
-        "domain": ".kw"
-      },
-      "Kyrgyzstan": {
-        "iso-3166-2": "KG",
-        "iso-3166-3": "KGZ",
-        "domain": ".kg"
-      },
-      "Laos": {
-        "iso-3166-2": "LA",
-        "iso-3166-3": "LAO",
-        "domain": ".la"
-      },
-      "Lebanon": {
-        "iso-3166-2": "LB",
-        "iso-3166-3": "LBN",
-        "domain": ".lb"
-      },
-      "Macau": {
-        "iso-3166-2": "MO",
-        "iso-3166-3": "MAC",
-        "domain": ".mo"
-      },
-      "Malaysia": {
-        "iso-3166-2": "MY",
-        "iso-3166-3": "MYS",
-        "domain": ".my"
-      },
-      "Maldives": {
-        "iso-3166-2": "MV",
-        "iso-3166-3": "MDV",
-        "domain": ".mv"
-      },
-      "Mongolia": {
-        "iso-3166-2": "MN",
-        "iso-3166-3": "MNG",
-        "domain": ".mn"
-      },
-      "Myanmar": {
-        "iso-3166-2": "MM",
-        "iso-3166-3": "MMR",
-        "domain": ".mm"
-      },
-      "Nepal": {
-        "iso-3166-2": "NP",
-        "iso-3166-3": "NPL",
-        "domain": ".np"
-      },
-      "North Korea": {
-        "iso-3166-2": "KP",
-        "iso-3166-3": "PRK",
-        "domain": ".kp"
-      },
-      "Oman": {
-        "iso-3166-2": "OM",
-        "iso-3166-3": "OMN",
-        "domain": ".om"
-      },
-      "Pakistan": {
-        "iso-3166-2": "PK",
-        "iso-3166-3": "PAK",
-        "domain": ".pk"
-      },
-      "Palestine": {
-        "iso-3166-2": "PS",
-        "iso-3166-3": "PSE",
-        "domain": ".ps"
-      },
-      "Philippines": {
-        "iso-3166-2": "PH",
-        "iso-3166-3": "PHL",
-        "domain": ".ph"
-      },
-      "Qatar": {
-        "iso-3166-2": "QA",
-        "iso-3166-3": "QAT",
-        "domain": ".qa"
-      },
-      "Saudi Arabia": {
-        "iso-3166-2": "SA",
-        "iso-3166-3": "SAU",
-        "domain": ".sa"
-      },
-      "Singapore": {
-        "iso-3166-2": "SG",
-        "iso-3166-3": "SGP",
-        "domain": ".sg"
-      },
-      "South Korea": {
-        "iso-3166-2": "KR",
-        "iso-3166-3": "KOR",
-        "domain": ".kr"
-      },
-      "Sri Lanka": {
-        "iso-3166-2": "LK",
-        "iso-3166-3": "LKA",
-        "domain": ".lk"
-      },
-      "Syria": {
-        "iso-3166-2": "SY",
-        "iso-3166-3": "SYR",
-        "domain": ".sy"
-      },
-      "Taiwan": {
-        "iso-3166-2": "TW",
-        "iso-3166-3": "TWN",
-        "domain": ".tw"
-      },
-      "Tajikistan": {
-        "iso-3166-2": "TJ",
-        "iso-3166-3": "TJK",
-        "domain": ".tj"
-      },
-      "Thailand": {
-        "iso-3166-2": "TH",
-        "iso-3166-3": "THA",
-        "domain": ".th"
-      },
-      "Turkey": {
-        "iso-3166-2": "TR",
-        "iso-3166-3": "TUR",
-        "domain": ".tr"
-      },
-      "Turkmenistan": {
-        "iso-3166-2": "TM",
-        "iso-3166-3": "TKM",
-        "domain": ".tm"
-      },
-      "United Arab Emirates": {
-        "iso-3166-2": "AE",
-        "iso-3166-3": "ARE",
-        "domain": ".ae"
-      },
-      "Uzbekistan": {
-        "iso-3166-2": "UZ",
-        "iso-3166-3": "UZB",
-        "domain": ".uz"
-      },
-      "Vietnam": {
-        "iso-3166-2": "VN",
-        "iso-3166-3": "VNM",
-        "domain": ".vn"
-      },
-      "Yemen": {
-        "iso-3166-2": "YE",
-        "iso-3166-3": "YEM",
-        "domain": ".ye"
-      }
+    "Ascension": {
+      "iso-3166-2": "SH",
+      "iso-3166-3": "SHN",
+      "domain": ".sh"
     },
-    "europe": {
-      "Albania": {
-        "iso-3166-2": "AL",
-        "iso-3166-3": "ALB",
-        "domain": ".al"
-      },
-      "Andorra": {
-        "iso-3166-2": "AD",
-        "iso-3166-3": "AND",
-        "domain": ".ad"
-      },
-      "Austria": {
-        "iso-3166-2": "AT",
-        "iso-3166-3": "AUT",
-        "domain": ".at"
-      },
-      "Belarus": {
-        "iso-3166-2": "BY",
-        "iso-3166-3": "BLR",
-        "domain": ".by"
-      },
-      "Belgium": {
-        "iso-3166-2": "BE",
-        "iso-3166-3": "BEL",
-        "domain": ".be"
-      },
-      "Bosnia and Herzegovina": {
-        "iso-3166-2": "BA",
-        "iso-3166-3": "BIH",
-        "domain": ".ba"
-      },
-      "Bulgaria": {
-        "iso-3166-2": "BG",
-        "iso-3166-3": "BGR",
-        "domain": ".bg"
-      },
-      "Croatia": {
-        "iso-3166-2": "HR",
-        "iso-3166-3": "HRV",
-        "domain": ".hr"
-      },
-      "Cyprus": {
-        "iso-3166-2": "CY",
-        "iso-3166-3": "CYP",
-        "domain": ".cy"
-      },
-      "Czech Republic": {
-        "iso-3166-2": "CZ",
-        "iso-3166-3": "CZE",
-        "domain": ".cz"
-      },
-      "Denmark": {
-        "iso-3166-2": "DK",
-        "iso-3166-3": "DNK",
-        "domain": ".dk"
-      },
-      "Estonia": {
-        "iso-3166-2": "EE",
-        "iso-3166-3": "EST",
-        "domain": ".ee"
-      },
-      "Faroe Islands": {
-        "iso-3166-2": "FO",
-        "iso-3166-3": "FRO",
-        "domain": ".fo"
-      },
-      "Finland": {
-        "iso-3166-2": "FI",
-        "iso-3166-3": "FIN",
-        "domain": ".fi"
-      },
-      "France": {
-        "iso-3166-2": "FR",
-        "iso-3166-3": "FRA",
-        "domain": ".fr"
-      },
-      "Germany": {
-        "iso-3166-2": "DE",
-        "iso-3166-3": "DEU",
-        "domain": ".de"
-      },
-      "Gibraltar": {
-        "iso-3166-2": "GI",
-        "iso-3166-3": "GIB",
-        "domain": ".gi"
-      },
-      "Greece": {
-        "iso-3166-2": "GR",
-        "iso-3166-3": "GRC",
-        "domain": ".gr"
-      },
-      "Hungary": {
-        "iso-3166-2": "HU",
-        "iso-3166-3": "HUN",
-        "domain": ".hu"
-      },
-      "Iceland": {
-        "iso-3166-2": "IS",
-        "iso-3166-3": "ISL",
-        "domain": ".is"
-      },
-      "Ireland": {
-        "iso-3166-2": "IE",
-        "iso-3166-3": "IRL",
-        "domain": ".ie"
-      },
-      "Isle of Man": {
-        "iso-3166-2": "IM",
-        "iso-3166-3": "IMN",
-        "domain": ".im"
-      },
-      "Italy": {
-        "iso-3166-2": "IT",
-        "iso-3166-3": "ITA",
-        "domain": ".it"
-      },
-      "Latvia": {
-        "iso-3166-2": "LV",
-        "iso-3166-3": "LVA",
-        "domain": ".lv"
-      },
-      "Liechtenstein": {
-        "iso-3166-2": "LI",
-        "iso-3166-3": "LIE",
-        "domain": ".li"
-      },
-      "Lithuania": {
-        "iso-3166-2": "LT",
-        "iso-3166-3": "LTU",
-        "domain": ".lt"
-      },
-      "Luxembourg": {
-        "iso-3166-2": "LU",
-        "iso-3166-3": "LUX",
-        "domain": ".lu"
-      },
-      "Macedonia": {
-        "iso-3166-2": "MK",
-        "iso-3166-3": "MKD",
-        "domain": ".mk"
-      },
-      "Malta": {
-        "iso-3166-2": "MT",
-        "iso-3166-3": "MLT",
-        "domain": ".mt"
-      },
-      "Moldova": {
-        "iso-3166-2": "MD",
-        "iso-3166-3": "MDA",
-        "domain": ".md"
-      },
-      "Monaco": {
-        "iso-3166-2": "MC",
-        "iso-3166-3": "MCO",
-        "domain": ".mc"
-      },
-      "Montenegro": {
-        "iso-3166-2": "ME",
-        "iso-3166-3": "MNE",
-        "domain": ".me"
-      },
-      "Netherlands": {
-        "iso-3166-2": "NL",
-        "iso-3166-3": "NLD",
-        "domain": ".nl"
-      },
-      "Norway": {
-        "iso-3166-2": "NO",
-        "iso-3166-3": "NOR",
-        "domain": ".no"
-      },
-      "Poland": {
-        "iso-3166-2": "PL",
-        "iso-3166-3": "POL",
-        "domain": ".pl"
-      },
-      "Portugal": {
-        "iso-3166-2": "PT",
-        "iso-3166-3": "PRT",
-        "domain": ".pt"
-      },
-      "Romania": {
-        "iso-3166-2": "RO",
-        "iso-3166-3": "ROU",
-        "domain": ".ro"
-      },
-      "Russia": {
-        "iso-3166-2": "RU",
-        "iso-3166-3": "RUS",
-        "domain": ".ru"
-      },
-      "San Marino": {
-        "iso-3166-2": "SM",
-        "iso-3166-3": "SMR",
-        "domain": ".sm"
-      },
-      "Serbia": {
-        "iso-3166-2": "RS",
-        "iso-3166-3": "SRB",
-        "domain": ".rs"
-      },
-      "Slovakia": {
-        "iso-3166-2": "SK",
-        "iso-3166-3": "SVK",
-        "domain": ".sk"
-      },
-      "Slovenia": {
-        "iso-3166-2": "SI",
-        "iso-3166-3": "SVN",
-        "domain": ".si"
-      },
-      "Spain": {
-        "iso-3166-2": "ES",
-        "iso-3166-3": "ESP",
-        "domain": ".es"
-      },
-      "Sweden": {
-        "iso-3166-2": "SE",
-        "iso-3166-3": "SWE",
-        "domain": ".se"
-      },
-      "Switzerland": {
-        "iso-3166-2": "CH",
-        "iso-3166-3": "CHE",
-        "domain": ".ch"
-      },
-      "Ukraine": {
-        "iso-3166-2": "UA",
-        "iso-3166-3": "UKR",
-        "domain": ".ua"
-      },
-      "United Kingdom": {
-        "iso-3166-2": "GB",
-        "iso-3166-3": "GBR",
-        "domain": ".uk"
-      },
-      "Vatican city": {
-        "iso-3166-2": "VA",
-        "iso-3166-3": "VAT",
-        "domain": ".va"
-      },
-      "Yugoslavia": {
-        "iso-3166-2": "RS",
-        "iso-3166-3": "RSB",
-        "domain": ".rs"
-      }
+    "Benin": {
+      "iso-3166-2": "BJ",
+      "iso-3166-3": "BEN",
+      "domain": ".bj"
     },
-    "north_america": {
-      "Anguilla": {
-        "iso-3166-2": "AI",
-        "iso-3166-3": "AIA",
-        "domain": ".ai"
-      },
-      "Antigua and Barbuda": {
-        "iso-3166-2": "AG",
-        "iso-3166-3": "ATG",
-        "domain": ".ag"
-      },
-      "Aruba": {
-        "iso-3166-2": "AW",
-        "iso-3166-3": "ABW",
-        "domain": ".aw"
-      },
-      "Bahamas": {
-        "iso-3166-2": "BS",
-        "iso-3166-3": "BHS",
-        "domain": ".bs"
-      },
-      "Barbados": {
-        "iso-3166-2": "BB",
-        "iso-3166-3": "BRB",
-        "domain": ".bb"
-      },
-      "Belize": {
-        "iso-3166-2": "BZ",
-        "iso-3166-3": "BLZ",
-        "domain": ".bz"
-      },
-      "Bermuda": {
-        "iso-3166-2": "BM",
-        "iso-3166-3": "BMU",
-        "domain": ".bm"
-      },
-      "Bonaire": {
-        "iso-3166-2": "BQ",
-        "iso-3166-3": "BES",
-        "domain": ".an"
-      },
-      "British Virgin Islands": {
-        "iso-3166-2": "VG",
-        "iso-3166-3": "VGB",
-        "domain": ".vg"
-      },
-      "Canada": {
-        "iso-3166-2": "CA",
-        "iso-3166-3": "CAN",
-        "domain": ".ca"
-      },
-      "Cayman Islands": {
-        "iso-3166-2": "KY",
-        "iso-3166-3": "CYM",
-        "domain": ".ky"
-      },
-      "Costa Rica": {
-        "iso-3166-2": "CR",
-        "iso-3166-3": "CRI",
-        "domain": ".cr"
-      },
-      "Cuba": {
-        "iso-3166-2": "CU",
-        "iso-3166-3": "CUB",
-        "domain": ".cu"
-      },
-      "Curacao": {
-        "iso-3166-2": "CW",
-        "iso-3166-3": "CUW",
-        "domain": ".cw"
-      },
-      "Dominica": {
-        "iso-3166-2": "DM",
-        "iso-3166-3": "DMA",
-        "domain": ".dm"
-      },
-      "Dominican Republic": {
-        "iso-3166-2": "DO",
-        "iso-3166-3": "DOM",
-        "domain": ".do"
-      },
-      "El Salvador": {
-        "iso-3166-2": "SV",
-        "iso-3166-3": "SLV",
-        "domain": ".sv"
-      },
-      "Greenland": {
-        "iso-3166-2": "GL",
-        "iso-3166-3": "GRL",
-        "domain": ".gl"
-      },
-      "Grenada and Carriacuou": {
-        "iso-3166-2": "GD",
-        "iso-3166-3": "GRD",
-        "domain": ".gd"
-      },
-      "Guadeloupe": {
-        "iso-3166-2": "GP",
-        "iso-3166-3": "GLP",
-        "domain": ".gp"
-      },
-      "Guatemala": {
-        "iso-3166-2": "GT",
-        "iso-3166-3": "GTM",
-        "domain": ".gt"
-      },
-      "Haiti": {
-        "iso-3166-2": "HT",
-        "iso-3166-3": "HTI",
-        "domain": ".ht"
-      },
-      "Honduras": {
-        "iso-3166-2": "HN",
-        "iso-3166-3": "HND",
-        "domain": ".hn"
-      },
-      "Jamaica": {
-        "iso-3166-2": "JM",
-        "iso-3166-3": "JAM",
-        "domain": ".jm"
-      },
-      "Martinique": {
-        "iso-3166-2": "MQ",
-        "iso-3166-3": "MTQ",
-        "domain": ".mq"
-      },
-      "Mexico": {
-        "iso-3166-2": "MX",
-        "iso-3166-3": "MEX",
-        "domain": ".mx"
-      },
-      "Miquelon": {
-        "iso-3166-2": "PM",
-        "iso-3166-3": "SPM",
-        "domain": ".pm"
-      },
-      "Montserrat": {
-        "iso-3166-2": "MS",
-        "iso-3166-3": "MSR",
-        "domain": ".ms"
-      },
-      "Netherlands Antilles": {
-        "iso-3166-2": "CW",
-        "iso-3166-3": "ANT",
-        "domain": ".an"
-      },
-      "Nevis": {
-        "iso-3166-2": "KN",
-        "iso-3166-3": "KNA",
-        "domain": ".kn"
-      },
-      "Nicaragua": {
-        "iso-3166-2": "NI",
-        "iso-3166-3": "NIC",
-        "domain": ".ni"
-      },
-      "Panama": {
-        "iso-3166-2": "PA",
-        "iso-3166-3": "PAN",
-        "domain": ".pa"
-      },
-      "Puerto Rico": {
-        "iso-3166-2": "PR",
-        "iso-3166-3": "PRI",
-        "domain": ".pr"
-      },
-      "Saba": {
-        "iso-3166-2": "BQ",
-        "iso-3166-3": "BES",
-        "domain": ".an"
-      },
-      "Sint Eustatius": {
-        "iso-3166-2": "BQ",
-        "iso-3166-3": "BES",
-        "domain": ".an"
-      },
-      "Sint Maarten": {
-        "iso-3166-2": "SX",
-        "iso-3166-3": "SXM",
-        "domain": ".sx"
-      },
-      "St. Kitts": {
-        "iso-3166-2": "KN",
-        "iso-3166-3": "KNA",
-        "domain": ".kn"
-      },
-      "St. Lucia": {
-        "iso-3166-2": "LC",
-        "iso-3166-3": "LCA",
-        "domain": ".lc"
-      },
-      "St. Pierre and Miquelon": {
-        "iso-3166-2": "PM",
-        "iso-3166-3": "SPM",
-        "domain": ".pm"
-      },
-      "St. Vincent": {
-        "iso-3166-2": "VC",
-        "iso-3166-3": "VCT",
-        "domain": ".vc"
-      },
-      "Trinidad and Tobago": {
-        "iso-3166-2": "TT",
-        "iso-3166-3": "TTO",
-        "domain": ".tt"
-      },
-      "Turks and Caicos Islands": {
-        "iso-3166-2": "TC",
-        "iso-3166-3": "TCA",
-        "domain": ".tc"
-      },
-      "United States": {
-        "iso-3166-2": "US",
-        "iso-3166-3": "USA",
-        "domain": ".us"
-      },
-      "US Virgin Islands": {
-        "iso-3166-2": "VI",
-        "iso-3166-3": "VIR",
-        "domain": ".vi"
-      }
+    "Botswana": {
+      "iso-3166-2": "BW",
+      "iso-3166-3": "BWA",
+      "domain": ".bw"
     },
-    "oceania": {
-      "American Samoa": {
-        "iso-3166-2": "AS",
-        "iso-3166-3": "ASM",
-        "domain": ".as"
-      },
-      "Australia": {
-        "iso-3166-2": "AU",
-        "iso-3166-3": "AUS",
-        "domain": ".au"
-      },
-      "Chatham Island, NZ": {
-        "iso-3166-2": "NZ",
-        "iso-3166-3": "NZL",
-        "domain": ".nz"
-      },
-      "Cook Islands": {
-        "iso-3166-2": "CK",
-        "iso-3166-3": "COK",
-        "domain": ".ck"
-      },
-      "East Timor": {
-        "iso-3166-2": "TL",
-        "iso-3166-3": "TLS",
-        "domain": ".tl"
-      },
-      "Federated States of Micronesia": {
-        "iso-3166-2": "FM",
-        "iso-3166-3": "FSM",
-        "domain": ".fm"
-      },
-      "Fiji Islands": {
-        "iso-3166-2": "FJ",
-        "iso-3166-3": "FJI",
-        "domain": ".fj"
-      },
-      "French Polynesia": {
-        "iso-3166-2": "PF",
-        "iso-3166-3": "PYF",
-        "domain": ".pf"
-      },
-      "Guam": {
-        "iso-3166-2": "GU",
-        "iso-3166-3": "GUM",
-        "domain": ".gu"
-      },
-      "Kiribati": {
-        "iso-3166-2": "KI",
-        "iso-3166-3": "KIR",
-        "domain": ".ki"
-      },
-      "Mariana Islands": {
-        "iso-3166-2": "MP",
-        "iso-3166-3": "MNP",
-        "domain": ".mp"
-      },
-      "Marshall Islands": {
-        "iso-3166-2": "MH",
-        "iso-3166-3": "MHL",
-        "domain": ".mh"
-      },
-      "Midway Islands": {
-        "iso-3166-2": "UM",
-        "iso-3166-3": "UMI",
-        "domain": ".um"
-      },
-      "Nauru": {
-        "iso-3166-2": "NR",
-        "iso-3166-3": "NRU",
-        "domain": ".nr"
-      },
-      "New Caledonia": {
-        "iso-3166-2": "NC",
-        "iso-3166-3": "NCL",
-        "domain": ".nc"
-      },
-      "New Zealand": {
-        "iso-3166-2": "NZ",
-        "iso-3166-3": "NZL",
-        "domain": ".nz"
-      },
-      "Niue": {
-        "iso-3166-2": "NU",
-        "iso-3166-3": "NIU",
-        "domain": ".nu"
-      },
-      "Norfolk Island": {
-        "iso-3166-2": "NF",
-        "iso-3166-3": "NFK",
-        "domain": ".nf"
-      },
-      "Palau": {
-        "iso-3166-2": "PW",
-        "iso-3166-3": "PLW",
-        "domain": ".pw"
-      },
-      "Papua New Guinea": {
-        "iso-3166-2": "PG",
-        "iso-3166-3": "PNG",
-        "domain": ".pg"
-      },
-      "Saipan": {
-        "iso-3166-2": "MP",
-        "iso-3166-3": "MNP",
-        "domain": ".mp"
-      },
-      "Samoa": {
-        "iso-3166-2": "WS",
-        "iso-3166-3": "WSM",
-        "domain": ".ws"
-      },
-      "Solomon Islands": {
-        "iso-3166-2": "SB",
-        "iso-3166-3": "SLB",
-        "domain": ".sb"
-      },
-      "Tokelau": {
-        "iso-3166-2": "TK",
-        "iso-3166-3": "TKL",
-        "domain": ".tk"
-      },
-      "Tonga": {
-        "iso-3166-2": "TO",
-        "iso-3166-3": "TON",
-        "domain": ".to"
-      },
-      "Tuvalu": {
-        "iso-3166-2": "TV",
-        "iso-3166-3": "TUV",
-        "domain": ".tv"
-      },
-      "Vanuatu": {
-        "iso-3166-2": "VU",
-        "iso-3166-3": "VUT",
-        "domain": ".vu"
-      },
-      "Wake Island": {
-        "iso-3166-2": "UM",
-        "iso-3166-3": "UMI",
-        "domain": ".um"
-      },
-      "Wallis and Futuna Islands": {
-        "iso-3166-2": "WF",
-        "iso-3166-3": "WLF",
-        "domain": ".wf"
-      }
+    "Burkina Faso": {
+      "iso-3166-2": "BF",
+      "iso-3166-3": "BFA",
+      "domain": ".bf"
     },
-    "south_america": {
-      "Argentina": {
-        "iso-3166-2": "AR",
-        "iso-3166-3": "ARG",
-        "domain": ".ar"
-      },
-      "Bolivia": {
-        "iso-3166-2": "BO",
-        "iso-3166-3": "BOL",
-        "domain": ".bo"
-      },
-      "Brazil": {
-        "iso-3166-2": "BR",
-        "iso-3166-3": "BRA",
-        "domain": ".br"
-      },
-      "Chile": {
-        "iso-3166-2": "CL",
-        "iso-3166-3": "CHL",
-        "domain": ".cl"
-      },
-      "Colombia": {
-        "iso-3166-2": "CO",
-        "iso-3166-3": "COL",
-        "domain": ".co"
-      },
-      "Ecuador": {
-        "iso-3166-2": "EC",
-        "iso-3166-3": "ECU",
-        "domain": ".ec"
-      },
-      "Falkland Islands": {
-        "iso-3166-2": "FK",
-        "iso-3166-3": "FLK",
-        "domain": ".fk"
-      },
-      "French Guiana": {
-        "iso-3166-2": "GF",
-        "iso-3166-3": "GUF",
-        "domain": ".gf"
-      },
-      "Guiana": {
-        "iso-3166-2": "GY",
-        "iso-3166-3": "GUF",
-        "domain": ".gf"
-      },
-      "Guyana": {
-        "iso-3166-2": "GY",
-        "iso-3166-3": "GUY",
-        "domain": ".gy"
-      },
-      "Paraguay": {
-        "iso-3166-2": "PY",
-        "iso-3166-3": "PRY",
-        "domain": ".py"
-      },
-      "Peru": {
-        "iso-3166-2": "PE",
-        "iso-3166-3": "PER",
-        "domain": ".pe"
-      },
-      "Suriname": {
-        "iso-3166-2": "SR",
-        "iso-3166-3": "SUR",
-        "domain": ".sr"
-      },
-      "Uruguay": {
-        "iso-3166-2": "UY",
-        "iso-3166-3": "URY",
-        "domain": ".uy"
-      },
-      "Venezuela": {
-        "iso-3166-2": "VE",
-        "iso-3166-3": "VEN",
-        "domain": ".ve"
-      }
+    "Burundi": {
+      "iso-3166-2": "BI",
+      "iso-3166-3": "BDI",
+      "domain": ".bi"
+    },
+    "Cameroon": {
+      "iso-3166-2": "CM",
+      "iso-3166-3": "CMR",
+      "domain": ".cm"
+    },
+    "Cape Verde Islands": {
+      "iso-3166-2": "CV",
+      "iso-3166-3": "CPV",
+      "domain": ".cv"
+    },
+    "Central African Republic": {
+      "iso-3166-2": "CF",
+      "iso-3166-3": "CAF",
+      "domain": ".cf"
+    },
+    "Chad Republic": {
+      "iso-3166-2": "TD",
+      "iso-3166-3": "TCD",
+      "domain": ".td"
+    },
+    "Comoros": {
+      "iso-3166-2": "KM",
+      "iso-3166-3": "COM",
+      "domain": ".km"
+    },
+    "Congo": {
+      "iso-3166-2": "CG",
+      "iso-3166-3": "COG",
+      "domain": ".cg"
+    },
+    "Dem. Republic of the Congo": {
+      "iso-3166-2": "CD",
+      "iso-3166-3": "COD",
+      "domain": ".cd"
+    },
+    "Djibouti": {
+      "iso-3166-2": "DJ",
+      "iso-3166-3": "DJI",
+      "domain": ".dj"
+    },
+    "Egypt": {
+      "iso-3166-2": "EG",
+      "iso-3166-3": "EGY",
+      "domain": ".eg"
+    },
+    "Equatorial Guinea": {
+      "iso-3166-2": "GQ",
+      "iso-3166-3": "GNQ",
+      "domain": ".gq"
+    },
+    "Eritrea": {
+      "iso-3166-2": "ER",
+      "iso-3166-3": "ERI",
+      "domain": ".er"
+    },
+    "eSwatini": {
+      "iso-3166-2": "SZ",
+      "iso-3166-3": "SWZ",
+      "domain": ".sz"
+    },
+    "Ethiopia": {
+      "iso-3166-2": "ET",
+      "iso-3166-3": "ETH",
+      "domain": ".et"
+    },
+    "Gabon Republic": {
+      "iso-3166-2": "GA",
+      "iso-3166-3": "GAB",
+      "domain": ".ga"
+    },
+    "Gambia": {
+      "iso-3166-2": "GM",
+      "iso-3166-3": "GMB",
+      "domain": ".gm"
+    },
+    "Ghana": {
+      "iso-3166-2": "GH",
+      "iso-3166-3": "GHA",
+      "domain": ".gh"
+    },
+    "Guinea": {
+      "iso-3166-2": "GN",
+      "iso-3166-3": "GIN",
+      "domain": ".gn"
+    },
+    "Guinea-Bissau": {
+      "iso-3166-2": "GW",
+      "iso-3166-3": "GNB",
+      "domain": ".gw"
+    },
+    "Ivory Coast": {
+      "iso-3166-2": "CI",
+      "iso-3166-3": "CIV",
+      "domain": ".ci"
+    },
+    "Kenya": {
+      "iso-3166-2": "KE",
+      "iso-3166-3": "KEN",
+      "domain": ".ke"
+    },
+    "Lesotho": {
+      "iso-3166-2": "LS",
+      "iso-3166-3": "LSO",
+      "domain": ".ls"
+    },
+    "Liberia": {
+      "iso-3166-2": "LR",
+      "iso-3166-3": "LBR",
+      "domain": ".lr"
+    },
+    "Libya": {
+      "iso-3166-2": "LY",
+      "iso-3166-3": "LBY",
+      "domain": ".ly"
+    },
+    "Madagascar": {
+      "iso-3166-2": "MG",
+      "iso-3166-3": "MDG",
+      "domain": ".mg"
+    },
+    "Malawi": {
+      "iso-3166-2": "MW",
+      "iso-3166-3": "MWI",
+      "domain": ".mw"
+    },
+    "Mali Republic": {
+      "iso-3166-2": "ML",
+      "iso-3166-3": "MLI",
+      "domain": ".ml"
+    },
+    "Mauritania": {
+      "iso-3166-2": "MR",
+      "iso-3166-3": "MRT",
+      "domain": ".mr"
+    },
+    "Mauritius": {
+      "iso-3166-2": "MU",
+      "iso-3166-3": "MUS",
+      "domain": ".mu"
+    },
+    "Mayotte Island": {
+      "iso-3166-2": "YT",
+      "iso-3166-3": "MYT",
+      "domain": ".yt"
+    },
+    "Morocco": {
+      "iso-3166-2": "MA",
+      "iso-3166-3": "MAR",
+      "domain": ".ma"
+    },
+    "Mozambique": {
+      "iso-3166-2": "MZ",
+      "iso-3166-3": "MOZ",
+      "domain": ".mz"
+    },
+    "Namibia": {
+      "iso-3166-2": "NA",
+      "iso-3166-3": "NAM",
+      "domain": ".na"
+    },
+    "Niger Republic": {
+      "iso-3166-2": "NE",
+      "iso-3166-3": "NER",
+      "domain": ".ne"
+    },
+    "Nigeria": {
+      "iso-3166-2": "NG",
+      "iso-3166-3": "NGA",
+      "domain": ".ng"
+    },
+    "Reunion Island": {
+      "iso-3166-2": "RE",
+      "iso-3166-3": "REU",
+      "domain": ".re"
+    },
+    "Rwanda": {
+      "iso-3166-2": "RW",
+      "iso-3166-3": "RWA",
+      "domain": ".rw"
+    },
+    "Sao Tome and Principe": {
+      "iso-3166-2": "ST",
+      "iso-3166-3": "STP",
+      "domain": ".st"
+    },
+    "Senegal Republic": {
+      "iso-3166-2": "SN",
+      "iso-3166-3": "SEN",
+      "domain": ".sn"
+    },
+    "Seychelles": {
+      "iso-3166-2": "SC",
+      "iso-3166-3": "SYC",
+      "domain": ".sc"
+    },
+    "Sierra Leone": {
+      "iso-3166-2": "SL",
+      "iso-3166-3": "SLE",
+      "domain": ".sl"
+    },
+    "Somalia Republic": {
+      "iso-3166-2": "SO",
+      "iso-3166-3": "SOM",
+      "domain": ".so"
+    },
+    "South Africa": {
+      "iso-3166-2": "ZA",
+      "iso-3166-3": "ZAF",
+      "domain": ".za"
+    },
+    "South Sudan": {
+      "iso-3166-2": "SS",
+      "iso-3166-3": "SSD",
+      "domain": ".ss"
+    },
+    "St. Helena": {
+      "iso-3166-2": "SH",
+      "iso-3166-3": "SHN",
+      "domain": ".sh"
+    },
+    "Sudan": {
+      "iso-3166-2": "SD",
+      "iso-3166-3": "SDN",
+      "domain": ".sd"
+    },
+    "Swaziland": {
+      "iso-3166-2": "SZ",
+      "iso-3166-3": "SWZ",
+      "domain": ".sz"
+    },
+    "Tanzania": {
+      "iso-3166-2": "TZ",
+      "iso-3166-3": "TZA",
+      "domain": ".tz"
+    },
+    "Togo": {
+      "iso-3166-2": "TG",
+      "iso-3166-3": "TGO",
+      "domain": ".tg"
+    },
+    "Tunisia": {
+      "iso-3166-2": "TN",
+      "iso-3166-3": "TUN",
+      "domain": ".tn"
+    },
+    "Uganda": {
+      "iso-3166-2": "UG",
+      "iso-3166-3": "UGA",
+      "domain": ".ug"
+    },
+    "Zaire": {
+      "iso-3166-2": "CD",
+      "iso-3166-3": "COD",
+      "domain": ".cd"
+    },
+    "Zambia": {
+      "iso-3166-2": "ZM",
+      "iso-3166-3": "ZMB",
+      "domain": ".zm"
+    },
+    "Zanzibar": {
+      "iso-3166-2": "TZ",
+      "iso-3166-3": "TZA",
+      "domain": ".tz"
+    },
+    "Zimbabwe": {
+      "iso-3166-2": "ZW",
+      "iso-3166-3": "ZWE",
+      "domain": ".zw"
+    }
+  },
+  "antarctica": {
+    "Antarctica": {
+      "iso-3166-2": "AQ",
+      "iso-3166-3": "ATA",
+      "domain": ".aq"
+    }
+  },
+  "asia": {
+    "Afghanistan": {
+      "iso-3166-2": "AF",
+      "iso-3166-3": "AFG",
+      "domain": ".af"
+    },
+    "Armenia": {
+      "iso-3166-2": "AM",
+      "iso-3166-3": "ARM",
+      "domain": ".am"
+    },
+    "Azerbaijan": {
+      "iso-3166-2": "AZ",
+      "iso-3166-3": "AZE",
+      "domain": ".az"
+    },
+    "Bahrain": {
+      "iso-3166-2": "BH",
+      "iso-3166-3": "BHR",
+      "domain": ".bh"
+    },
+    "Bangladesh": {
+      "iso-3166-2": "BD",
+      "iso-3166-3": "BGD",
+      "domain": ".bd"
+    },
+    "Bhutan": {
+      "iso-3166-2": "BT",
+      "iso-3166-3": "BTN",
+      "domain": ".bt"
+    },
+    "Brunei": {
+      "iso-3166-2": "BN",
+      "iso-3166-3": "BRN",
+      "domain": ".bn"
+    },
+    "Cambodia": {
+      "iso-3166-2": "KH",
+      "iso-3166-3": "KHM",
+      "domain": ".kh"
+    },
+    "China": {
+      "iso-3166-2": "CN",
+      "iso-3166-3": "CHN",
+      "domain": ".cn"
+    },
+    "Christmas Island": {
+      "iso-3166-2": "CX",
+      "iso-3166-3": "CXR",
+      "domain": ".cx"
+    },
+    "Cocos Islands": {
+      "iso-3166-2": "CC",
+      "iso-3166-3": "CCK",
+      "domain": ".cc"
+    },
+    "Diego Garcia": {
+      "iso-3166-2": "IO",
+      "iso-3166-3": "IOT",
+      "domain": ".io"
+    },
+    "Georgia": {
+      "iso-3166-2": "GE",
+      "iso-3166-3": "GEO",
+      "domain": ".ge"
+    },
+    "Hong Kong": {
+      "iso-3166-2": "HK",
+      "iso-3166-3": "HKG",
+      "domain": ".hk"
+    },
+    "India": {
+      "iso-3166-2": "IN",
+      "iso-3166-3": "IND",
+      "domain": ".in"
+    },
+    "Indonesia": {
+      "iso-3166-2": "ID",
+      "iso-3166-3": "IDN",
+      "domain": ".id"
+    },
+    "Iran": {
+      "iso-3166-2": "IR",
+      "iso-3166-3": "IRN",
+      "domain": ".ir"
+    },
+    "Iraq": {
+      "iso-3166-2": "IQ",
+      "iso-3166-3": "IRQ",
+      "domain": ".iq"
+    },
+    "Israel": {
+      "iso-3166-2": "IL",
+      "iso-3166-3": "ISR",
+      "domain": ".il"
+    },
+    "Japan": {
+      "iso-3166-2": "JP",
+      "iso-3166-3": "JPN",
+      "domain": ".jp"
+    },
+    "Jordan": {
+      "iso-3166-2": "JO",
+      "iso-3166-3": "JOR",
+      "domain": ".jo"
+    },
+    "Kazakhstan": {
+      "iso-3166-2": "KZ",
+      "iso-3166-3": "KAZ",
+      "domain": ".kz"
+    },
+    "Kuwait": {
+      "iso-3166-2": "KW",
+      "iso-3166-3": "KWT",
+      "domain": ".kw"
+    },
+    "Kyrgyzstan": {
+      "iso-3166-2": "KG",
+      "iso-3166-3": "KGZ",
+      "domain": ".kg"
+    },
+    "Laos": {
+      "iso-3166-2": "LA",
+      "iso-3166-3": "LAO",
+      "domain": ".la"
+    },
+    "Lebanon": {
+      "iso-3166-2": "LB",
+      "iso-3166-3": "LBN",
+      "domain": ".lb"
+    },
+    "Macau": {
+      "iso-3166-2": "MO",
+      "iso-3166-3": "MAC",
+      "domain": ".mo"
+    },
+    "Malaysia": {
+      "iso-3166-2": "MY",
+      "iso-3166-3": "MYS",
+      "domain": ".my"
+    },
+    "Maldives": {
+      "iso-3166-2": "MV",
+      "iso-3166-3": "MDV",
+      "domain": ".mv"
+    },
+    "Mongolia": {
+      "iso-3166-2": "MN",
+      "iso-3166-3": "MNG",
+      "domain": ".mn"
+    },
+    "Myanmar": {
+      "iso-3166-2": "MM",
+      "iso-3166-3": "MMR",
+      "domain": ".mm"
+    },
+    "Nepal": {
+      "iso-3166-2": "NP",
+      "iso-3166-3": "NPL",
+      "domain": ".np"
+    },
+    "North Korea": {
+      "iso-3166-2": "KP",
+      "iso-3166-3": "PRK",
+      "domain": ".kp"
+    },
+    "Oman": {
+      "iso-3166-2": "OM",
+      "iso-3166-3": "OMN",
+      "domain": ".om"
+    },
+    "Pakistan": {
+      "iso-3166-2": "PK",
+      "iso-3166-3": "PAK",
+      "domain": ".pk"
+    },
+    "Palestine": {
+      "iso-3166-2": "PS",
+      "iso-3166-3": "PSE",
+      "domain": ".ps"
+    },
+    "Philippines": {
+      "iso-3166-2": "PH",
+      "iso-3166-3": "PHL",
+      "domain": ".ph"
+    },
+    "Qatar": {
+      "iso-3166-2": "QA",
+      "iso-3166-3": "QAT",
+      "domain": ".qa"
+    },
+    "Saudi Arabia": {
+      "iso-3166-2": "SA",
+      "iso-3166-3": "SAU",
+      "domain": ".sa"
+    },
+    "Singapore": {
+      "iso-3166-2": "SG",
+      "iso-3166-3": "SGP",
+      "domain": ".sg"
+    },
+    "South Korea": {
+      "iso-3166-2": "KR",
+      "iso-3166-3": "KOR",
+      "domain": ".kr"
+    },
+    "Sri Lanka": {
+      "iso-3166-2": "LK",
+      "iso-3166-3": "LKA",
+      "domain": ".lk"
+    },
+    "Syria": {
+      "iso-3166-2": "SY",
+      "iso-3166-3": "SYR",
+      "domain": ".sy"
+    },
+    "Taiwan": {
+      "iso-3166-2": "TW",
+      "iso-3166-3": "TWN",
+      "domain": ".tw"
+    },
+    "Tajikistan": {
+      "iso-3166-2": "TJ",
+      "iso-3166-3": "TJK",
+      "domain": ".tj"
+    },
+    "Thailand": {
+      "iso-3166-2": "TH",
+      "iso-3166-3": "THA",
+      "domain": ".th"
+    },
+    "Turkey": {
+      "iso-3166-2": "TR",
+      "iso-3166-3": "TUR",
+      "domain": ".tr"
+    },
+    "Turkmenistan": {
+      "iso-3166-2": "TM",
+      "iso-3166-3": "TKM",
+      "domain": ".tm"
+    },
+    "United Arab Emirates": {
+      "iso-3166-2": "AE",
+      "iso-3166-3": "ARE",
+      "domain": ".ae"
+    },
+    "Uzbekistan": {
+      "iso-3166-2": "UZ",
+      "iso-3166-3": "UZB",
+      "domain": ".uz"
+    },
+    "Vietnam": {
+      "iso-3166-2": "VN",
+      "iso-3166-3": "VNM",
+      "domain": ".vn"
+    },
+    "Yemen": {
+      "iso-3166-2": "YE",
+      "iso-3166-3": "YEM",
+      "domain": ".ye"
+    }
+  },
+  "europe": {
+    "Albania": {
+      "iso-3166-2": "AL",
+      "iso-3166-3": "ALB",
+      "domain": ".al"
+    },
+    "Andorra": {
+      "iso-3166-2": "AD",
+      "iso-3166-3": "AND",
+      "domain": ".ad"
+    },
+    "Austria": {
+      "iso-3166-2": "AT",
+      "iso-3166-3": "AUT",
+      "domain": ".at"
+    },
+    "Belarus": {
+      "iso-3166-2": "BY",
+      "iso-3166-3": "BLR",
+      "domain": ".by"
+    },
+    "Belgium": {
+      "iso-3166-2": "BE",
+      "iso-3166-3": "BEL",
+      "domain": ".be"
+    },
+    "Bosnia and Herzegovina": {
+      "iso-3166-2": "BA",
+      "iso-3166-3": "BIH",
+      "domain": ".ba"
+    },
+    "Bulgaria": {
+      "iso-3166-2": "BG",
+      "iso-3166-3": "BGR",
+      "domain": ".bg"
+    },
+    "Croatia": {
+      "iso-3166-2": "HR",
+      "iso-3166-3": "HRV",
+      "domain": ".hr"
+    },
+    "Cyprus": {
+      "iso-3166-2": "CY",
+      "iso-3166-3": "CYP",
+      "domain": ".cy"
+    },
+    "Czech Republic": {
+      "iso-3166-2": "CZ",
+      "iso-3166-3": "CZE",
+      "domain": ".cz"
+    },
+    "Denmark": {
+      "iso-3166-2": "DK",
+      "iso-3166-3": "DNK",
+      "domain": ".dk"
+    },
+    "Estonia": {
+      "iso-3166-2": "EE",
+      "iso-3166-3": "EST",
+      "domain": ".ee"
+    },
+    "Faroe Islands": {
+      "iso-3166-2": "FO",
+      "iso-3166-3": "FRO",
+      "domain": ".fo"
+    },
+    "Finland": {
+      "iso-3166-2": "FI",
+      "iso-3166-3": "FIN",
+      "domain": ".fi"
+    },
+    "France": {
+      "iso-3166-2": "FR",
+      "iso-3166-3": "FRA",
+      "domain": ".fr"
+    },
+    "Germany": {
+      "iso-3166-2": "DE",
+      "iso-3166-3": "DEU",
+      "domain": ".de"
+    },
+    "Gibraltar": {
+      "iso-3166-2": "GI",
+      "iso-3166-3": "GIB",
+      "domain": ".gi"
+    },
+    "Greece": {
+      "iso-3166-2": "GR",
+      "iso-3166-3": "GRC",
+      "domain": ".gr"
+    },
+    "Hungary": {
+      "iso-3166-2": "HU",
+      "iso-3166-3": "HUN",
+      "domain": ".hu"
+    },
+    "Iceland": {
+      "iso-3166-2": "IS",
+      "iso-3166-3": "ISL",
+      "domain": ".is"
+    },
+    "Ireland": {
+      "iso-3166-2": "IE",
+      "iso-3166-3": "IRL",
+      "domain": ".ie"
+    },
+    "Isle of Man": {
+      "iso-3166-2": "IM",
+      "iso-3166-3": "IMN",
+      "domain": ".im"
+    },
+    "Italy": {
+      "iso-3166-2": "IT",
+      "iso-3166-3": "ITA",
+      "domain": ".it"
+    },
+    "Latvia": {
+      "iso-3166-2": "LV",
+      "iso-3166-3": "LVA",
+      "domain": ".lv"
+    },
+    "Liechtenstein": {
+      "iso-3166-2": "LI",
+      "iso-3166-3": "LIE",
+      "domain": ".li"
+    },
+    "Lithuania": {
+      "iso-3166-2": "LT",
+      "iso-3166-3": "LTU",
+      "domain": ".lt"
+    },
+    "Luxembourg": {
+      "iso-3166-2": "LU",
+      "iso-3166-3": "LUX",
+      "domain": ".lu"
+    },
+    "Macedonia": {
+      "iso-3166-2": "MK",
+      "iso-3166-3": "MKD",
+      "domain": ".mk"
+    },
+    "Malta": {
+      "iso-3166-2": "MT",
+      "iso-3166-3": "MLT",
+      "domain": ".mt"
+    },
+    "Moldova": {
+      "iso-3166-2": "MD",
+      "iso-3166-3": "MDA",
+      "domain": ".md"
+    },
+    "Monaco": {
+      "iso-3166-2": "MC",
+      "iso-3166-3": "MCO",
+      "domain": ".mc"
+    },
+    "Montenegro": {
+      "iso-3166-2": "ME",
+      "iso-3166-3": "MNE",
+      "domain": ".me"
+    },
+    "Netherlands": {
+      "iso-3166-2": "NL",
+      "iso-3166-3": "NLD",
+      "domain": ".nl"
+    },
+    "Norway": {
+      "iso-3166-2": "NO",
+      "iso-3166-3": "NOR",
+      "domain": ".no"
+    },
+    "Poland": {
+      "iso-3166-2": "PL",
+      "iso-3166-3": "POL",
+      "domain": ".pl"
+    },
+    "Portugal": {
+      "iso-3166-2": "PT",
+      "iso-3166-3": "PRT",
+      "domain": ".pt"
+    },
+    "Romania": {
+      "iso-3166-2": "RO",
+      "iso-3166-3": "ROU",
+      "domain": ".ro"
+    },
+    "Russia": {
+      "iso-3166-2": "RU",
+      "iso-3166-3": "RUS",
+      "domain": ".ru"
+    },
+    "San Marino": {
+      "iso-3166-2": "SM",
+      "iso-3166-3": "SMR",
+      "domain": ".sm"
+    },
+    "Serbia": {
+      "iso-3166-2": "RS",
+      "iso-3166-3": "SRB",
+      "domain": ".rs"
+    },
+    "Slovakia": {
+      "iso-3166-2": "SK",
+      "iso-3166-3": "SVK",
+      "domain": ".sk"
+    },
+    "Slovenia": {
+      "iso-3166-2": "SI",
+      "iso-3166-3": "SVN",
+      "domain": ".si"
+    },
+    "Spain": {
+      "iso-3166-2": "ES",
+      "iso-3166-3": "ESP",
+      "domain": ".es"
+    },
+    "Sweden": {
+      "iso-3166-2": "SE",
+      "iso-3166-3": "SWE",
+      "domain": ".se"
+    },
+    "Switzerland": {
+      "iso-3166-2": "CH",
+      "iso-3166-3": "CHE",
+      "domain": ".ch"
+    },
+    "Ukraine": {
+      "iso-3166-2": "UA",
+      "iso-3166-3": "UKR",
+      "domain": ".ua"
+    },
+    "United Kingdom": {
+      "iso-3166-2": "GB",
+      "iso-3166-3": "GBR",
+      "domain": ".uk"
+    },
+    "Vatican city": {
+      "iso-3166-2": "VA",
+      "iso-3166-3": "VAT",
+      "domain": ".va"
+    },
+    "Yugoslavia": {
+      "iso-3166-2": "RS",
+      "iso-3166-3": "RSB",
+      "domain": ".rs"
+    }
+  },
+  "north_america": {
+    "Anguilla": {
+      "iso-3166-2": "AI",
+      "iso-3166-3": "AIA",
+      "domain": ".ai"
+    },
+    "Antigua and Barbuda": {
+      "iso-3166-2": "AG",
+      "iso-3166-3": "ATG",
+      "domain": ".ag"
+    },
+    "Aruba": {
+      "iso-3166-2": "AW",
+      "iso-3166-3": "ABW",
+      "domain": ".aw"
+    },
+    "Bahamas": {
+      "iso-3166-2": "BS",
+      "iso-3166-3": "BHS",
+      "domain": ".bs"
+    },
+    "Barbados": {
+      "iso-3166-2": "BB",
+      "iso-3166-3": "BRB",
+      "domain": ".bb"
+    },
+    "Belize": {
+      "iso-3166-2": "BZ",
+      "iso-3166-3": "BLZ",
+      "domain": ".bz"
+    },
+    "Bermuda": {
+      "iso-3166-2": "BM",
+      "iso-3166-3": "BMU",
+      "domain": ".bm"
+    },
+    "Bonaire": {
+      "iso-3166-2": "BQ",
+      "iso-3166-3": "BES",
+      "domain": ".an"
+    },
+    "British Virgin Islands": {
+      "iso-3166-2": "VG",
+      "iso-3166-3": "VGB",
+      "domain": ".vg"
+    },
+    "Canada": {
+      "iso-3166-2": "CA",
+      "iso-3166-3": "CAN",
+      "domain": ".ca"
+    },
+    "Cayman Islands": {
+      "iso-3166-2": "KY",
+      "iso-3166-3": "CYM",
+      "domain": ".ky"
+    },
+    "Costa Rica": {
+      "iso-3166-2": "CR",
+      "iso-3166-3": "CRI",
+      "domain": ".cr"
+    },
+    "Cuba": {
+      "iso-3166-2": "CU",
+      "iso-3166-3": "CUB",
+      "domain": ".cu"
+    },
+    "Curacao": {
+      "iso-3166-2": "CW",
+      "iso-3166-3": "CUW",
+      "domain": ".cw"
+    },
+    "Dominica": {
+      "iso-3166-2": "DM",
+      "iso-3166-3": "DMA",
+      "domain": ".dm"
+    },
+    "Dominican Republic": {
+      "iso-3166-2": "DO",
+      "iso-3166-3": "DOM",
+      "domain": ".do"
+    },
+    "El Salvador": {
+      "iso-3166-2": "SV",
+      "iso-3166-3": "SLV",
+      "domain": ".sv"
+    },
+    "Greenland": {
+      "iso-3166-2": "GL",
+      "iso-3166-3": "GRL",
+      "domain": ".gl"
+    },
+    "Grenada and Carriacuou": {
+      "iso-3166-2": "GD",
+      "iso-3166-3": "GRD",
+      "domain": ".gd"
+    },
+    "Guadeloupe": {
+      "iso-3166-2": "GP",
+      "iso-3166-3": "GLP",
+      "domain": ".gp"
+    },
+    "Guatemala": {
+      "iso-3166-2": "GT",
+      "iso-3166-3": "GTM",
+      "domain": ".gt"
+    },
+    "Haiti": {
+      "iso-3166-2": "HT",
+      "iso-3166-3": "HTI",
+      "domain": ".ht"
+    },
+    "Honduras": {
+      "iso-3166-2": "HN",
+      "iso-3166-3": "HND",
+      "domain": ".hn"
+    },
+    "Jamaica": {
+      "iso-3166-2": "JM",
+      "iso-3166-3": "JAM",
+      "domain": ".jm"
+    },
+    "Martinique": {
+      "iso-3166-2": "MQ",
+      "iso-3166-3": "MTQ",
+      "domain": ".mq"
+    },
+    "Mexico": {
+      "iso-3166-2": "MX",
+      "iso-3166-3": "MEX",
+      "domain": ".mx"
+    },
+    "Miquelon": {
+      "iso-3166-2": "PM",
+      "iso-3166-3": "SPM",
+      "domain": ".pm"
+    },
+    "Montserrat": {
+      "iso-3166-2": "MS",
+      "iso-3166-3": "MSR",
+      "domain": ".ms"
+    },
+    "Netherlands Antilles": {
+      "iso-3166-2": "CW",
+      "iso-3166-3": "ANT",
+      "domain": ".an"
+    },
+    "Nevis": {
+      "iso-3166-2": "KN",
+      "iso-3166-3": "KNA",
+      "domain": ".kn"
+    },
+    "Nicaragua": {
+      "iso-3166-2": "NI",
+      "iso-3166-3": "NIC",
+      "domain": ".ni"
+    },
+    "Panama": {
+      "iso-3166-2": "PA",
+      "iso-3166-3": "PAN",
+      "domain": ".pa"
+    },
+    "Puerto Rico": {
+      "iso-3166-2": "PR",
+      "iso-3166-3": "PRI",
+      "domain": ".pr"
+    },
+    "Saba": {
+      "iso-3166-2": "BQ",
+      "iso-3166-3": "BES",
+      "domain": ".an"
+    },
+    "Sint Eustatius": {
+      "iso-3166-2": "BQ",
+      "iso-3166-3": "BES",
+      "domain": ".an"
+    },
+    "Sint Maarten": {
+      "iso-3166-2": "SX",
+      "iso-3166-3": "SXM",
+      "domain": ".sx"
+    },
+    "St. Kitts": {
+      "iso-3166-2": "KN",
+      "iso-3166-3": "KNA",
+      "domain": ".kn"
+    },
+    "St. Lucia": {
+      "iso-3166-2": "LC",
+      "iso-3166-3": "LCA",
+      "domain": ".lc"
+    },
+    "St. Pierre and Miquelon": {
+      "iso-3166-2": "PM",
+      "iso-3166-3": "SPM",
+      "domain": ".pm"
+    },
+    "St. Vincent": {
+      "iso-3166-2": "VC",
+      "iso-3166-3": "VCT",
+      "domain": ".vc"
+    },
+    "Trinidad and Tobago": {
+      "iso-3166-2": "TT",
+      "iso-3166-3": "TTO",
+      "domain": ".tt"
+    },
+    "Turks and Caicos Islands": {
+      "iso-3166-2": "TC",
+      "iso-3166-3": "TCA",
+      "domain": ".tc"
+    },
+    "United States": {
+      "iso-3166-2": "US",
+      "iso-3166-3": "USA",
+      "domain": ".us"
+    },
+    "US Virgin Islands": {
+      "iso-3166-2": "VI",
+      "iso-3166-3": "VIR",
+      "domain": ".vi"
+    }
+  },
+  "oceania": {
+    "American Samoa": {
+      "iso-3166-2": "AS",
+      "iso-3166-3": "ASM",
+      "domain": ".as"
+    },
+    "Australia": {
+      "iso-3166-2": "AU",
+      "iso-3166-3": "AUS",
+      "domain": ".au"
+    },
+    "Chatham Island, NZ": {
+      "iso-3166-2": "NZ",
+      "iso-3166-3": "NZL",
+      "domain": ".nz"
+    },
+    "Cook Islands": {
+      "iso-3166-2": "CK",
+      "iso-3166-3": "COK",
+      "domain": ".ck"
+    },
+    "East Timor": {
+      "iso-3166-2": "TL",
+      "iso-3166-3": "TLS",
+      "domain": ".tl"
+    },
+    "Federated States of Micronesia": {
+      "iso-3166-2": "FM",
+      "iso-3166-3": "FSM",
+      "domain": ".fm"
+    },
+    "Fiji Islands": {
+      "iso-3166-2": "FJ",
+      "iso-3166-3": "FJI",
+      "domain": ".fj"
+    },
+    "French Polynesia": {
+      "iso-3166-2": "PF",
+      "iso-3166-3": "PYF",
+      "domain": ".pf"
+    },
+    "Guam": {
+      "iso-3166-2": "GU",
+      "iso-3166-3": "GUM",
+      "domain": ".gu"
+    },
+    "Kiribati": {
+      "iso-3166-2": "KI",
+      "iso-3166-3": "KIR",
+      "domain": ".ki"
+    },
+    "Mariana Islands": {
+      "iso-3166-2": "MP",
+      "iso-3166-3": "MNP",
+      "domain": ".mp"
+    },
+    "Marshall Islands": {
+      "iso-3166-2": "MH",
+      "iso-3166-3": "MHL",
+      "domain": ".mh"
+    },
+    "Midway Islands": {
+      "iso-3166-2": "UM",
+      "iso-3166-3": "UMI",
+      "domain": ".um"
+    },
+    "Nauru": {
+      "iso-3166-2": "NR",
+      "iso-3166-3": "NRU",
+      "domain": ".nr"
+    },
+    "New Caledonia": {
+      "iso-3166-2": "NC",
+      "iso-3166-3": "NCL",
+      "domain": ".nc"
+    },
+    "New Zealand": {
+      "iso-3166-2": "NZ",
+      "iso-3166-3": "NZL",
+      "domain": ".nz"
+    },
+    "Niue": {
+      "iso-3166-2": "NU",
+      "iso-3166-3": "NIU",
+      "domain": ".nu"
+    },
+    "Norfolk Island": {
+      "iso-3166-2": "NF",
+      "iso-3166-3": "NFK",
+      "domain": ".nf"
+    },
+    "Palau": {
+      "iso-3166-2": "PW",
+      "iso-3166-3": "PLW",
+      "domain": ".pw"
+    },
+    "Papua New Guinea": {
+      "iso-3166-2": "PG",
+      "iso-3166-3": "PNG",
+      "domain": ".pg"
+    },
+    "Saipan": {
+      "iso-3166-2": "MP",
+      "iso-3166-3": "MNP",
+      "domain": ".mp"
+    },
+    "Samoa": {
+      "iso-3166-2": "WS",
+      "iso-3166-3": "WSM",
+      "domain": ".ws"
+    },
+    "Solomon Islands": {
+      "iso-3166-2": "SB",
+      "iso-3166-3": "SLB",
+      "domain": ".sb"
+    },
+    "Tokelau": {
+      "iso-3166-2": "TK",
+      "iso-3166-3": "TKL",
+      "domain": ".tk"
+    },
+    "Tonga": {
+      "iso-3166-2": "TO",
+      "iso-3166-3": "TON",
+      "domain": ".to"
+    },
+    "Tuvalu": {
+      "iso-3166-2": "TV",
+      "iso-3166-3": "TUV",
+      "domain": ".tv"
+    },
+    "Vanuatu": {
+      "iso-3166-2": "VU",
+      "iso-3166-3": "VUT",
+      "domain": ".vu"
+    },
+    "Wake Island": {
+      "iso-3166-2": "UM",
+      "iso-3166-3": "UMI",
+      "domain": ".um"
+    },
+    "Wallis and Futuna Islands": {
+      "iso-3166-2": "WF",
+      "iso-3166-3": "WLF",
+      "domain": ".wf"
+    }
+  },
+  "south_america": {
+    "Argentina": {
+      "iso-3166-2": "AR",
+      "iso-3166-3": "ARG",
+      "domain": ".ar"
+    },
+    "Bolivia": {
+      "iso-3166-2": "BO",
+      "iso-3166-3": "BOL",
+      "domain": ".bo"
+    },
+    "Brazil": {
+      "iso-3166-2": "BR",
+      "iso-3166-3": "BRA",
+      "domain": ".br"
+    },
+    "Chile": {
+      "iso-3166-2": "CL",
+      "iso-3166-3": "CHL",
+      "domain": ".cl"
+    },
+    "Colombia": {
+      "iso-3166-2": "CO",
+      "iso-3166-3": "COL",
+      "domain": ".co"
+    },
+    "Ecuador": {
+      "iso-3166-2": "EC",
+      "iso-3166-3": "ECU",
+      "domain": ".ec"
+    },
+    "Falkland Islands": {
+      "iso-3166-2": "FK",
+      "iso-3166-3": "FLK",
+      "domain": ".fk"
+    },
+    "French Guiana": {
+      "iso-3166-2": "GF",
+      "iso-3166-3": "GUF",
+      "domain": ".gf"
+    },
+    "Guiana": {
+      "iso-3166-2": "GY",
+      "iso-3166-3": "GUF",
+      "domain": ".gf"
+    },
+    "Guyana": {
+      "iso-3166-2": "GY",
+      "iso-3166-3": "GUY",
+      "domain": ".gy"
+    },
+    "Paraguay": {
+      "iso-3166-2": "PY",
+      "iso-3166-3": "PRY",
+      "domain": ".py"
+    },
+    "Peru": {
+      "iso-3166-2": "PE",
+      "iso-3166-3": "PER",
+      "domain": ".pe"
+    },
+    "Suriname": {
+      "iso-3166-2": "SR",
+      "iso-3166-3": "SUR",
+      "domain": ".sr"
+    },
+    "Uruguay": {
+      "iso-3166-2": "UY",
+      "iso-3166-3": "URY",
+      "domain": ".uy"
+    },
+    "Venezuela": {
+      "iso-3166-2": "VE",
+      "iso-3166-3": "VEN",
+      "domain": ".ve"
     }
   }
-  
+}

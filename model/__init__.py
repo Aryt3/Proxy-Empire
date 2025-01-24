@@ -1,3 +1,5 @@
 from . import models, database
 
-models.Base.metadata.create_all(bind=database.engine)
+async def __init__():
+    async with database.engine.begin() as conn:
+        await conn.run_sync(models.Base.metadata.create_all)
