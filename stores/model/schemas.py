@@ -29,6 +29,7 @@ class Proxy_Schema(BaseModel):
     last_ts: Optional[int] = None
     ip_score: Optional[str] = None
     active: Optional[bool] = False
+    source: Optional[str] = None
 
 class Update_Schema(BaseModel):
     pid: str

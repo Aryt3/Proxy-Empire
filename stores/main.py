@@ -18,7 +18,7 @@ from stores.model.data_classes import (
 )
 from utils import handle_exceptions
 from enum import Enum
-
+import time
 
 class ProxyStore:
 
@@ -152,7 +152,7 @@ class ProxyStore:
                     country=CountryEnum(proxy.country),
                     latency=proxy.latency,
                     secret=proxy.secret,
-                    last_ts=proxy.last_ts,
+                    last_ts=int(time.time()),
                     ip_score=proxy.ip_score,
                     active=proxy.active
                 ) for proxy in proxies
@@ -160,7 +160,19 @@ class ProxyStore:
             
             # Add all proxies at once
             db.add_all(proxy_objects)
+            await db.commit()
 
+            proxy_origin_objects = [
+                Proxy_Origin(
+                    pid=proxy.id, 
+                    ts=int(time.time()), 
+                    source=proxy_schema.source 
+                )
+                for proxy, proxy_schema in zip(proxy_objects, proxies)
+            ]
+
+            # Add all proxy-origins at once
+            db.add_all(proxy_origin_objects)
             await db.commit()
         
         return

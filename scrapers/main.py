@@ -20,57 +20,64 @@ class ProxyScraper:
         self.ipv6_regex = r'^([0-9a-fA-F]{1,4}:){7}([0-9a-fA-F]{1,4})'
         self.domain_regex = r'^(?!-)[A-Za-z0-9-]{1,63}(?<!-)\.(?!-)[A-Za-z0-9-]{2,}\.?'
 
+
     def _extract_proxy(self, line: str, url: str, protocol):
         '''
         Helper-Function to return a parsed proxy as dictionary
         '''
-        
-        # Check for IPv4
-        if re.match(self.ipv4_regex, line):
-            # IPv4 format: host:port
-            res = {
-                'host': line.split(':')[0],
-                'port': int(line.split(':')[1]),
-                'origin': url
-            }
 
-        # Check for IPv6
-        elif re.match(self.ipv6_regex, line):
-            # IPv6 format: [host]:port
-            # Note: IPv6 addresses are enclosed in brackets, e.g., [2001:db8::1]:8080
-            if ':' in line:
-                host_port = line.split(']')  # Split by closing bracket
-                host = host_port[0][1:]  # Remove the opening '['
-                port = int(host_port[1][1:])  # Remove the ':'
+        try:
+            print(line, url)
+
+            # Check for IPv4
+            if re.match(self.ipv4_regex, line):
+                # IPv4 format: host:port
+                res = {
+                    'host': line.split(':')[0],
+                    'port': int(line.split(':')[1]),
+                    'origin': url
+                }
+
+            # Check for IPv6
+            elif re.match(self.ipv6_regex, line):
+                # IPv6 format: [host]:port
+                # Note: IPv6 addresses are enclosed in brackets, e.g., [2001:db8::1]:8080
+                if ':' in line:
+                    host_port = line.split(']')  # Split by closing bracket
+                    host = host_port[0][1:]  # Remove the opening '['
+                    port = int(host_port[1][1:])  # Remove the ':'
+                else:
+                    host = line
+                    port = None
+
+                res = {
+                    'host': host,
+                    'port': port,
+                    'origin': url,
+                }
+
+            # Check for domain
+            elif re.match(self.domain_regex, line):
+                # Domain format: host:port
+                host_port = line.split(':')
+                host = host_port[0]
+                port = int(host_port[1]) if len(host_port) > 1 else None
+                
+                res = {
+                    'host': host,
+                    'port': port,
+                    'origin': url
+                }
+
             else:
-                host = line
-                port = None
+                res = {}
 
-            res = {
-                'host': host,
-                'port': port,
-                'origin': url,
-            }
+            res['protocol'] = protocol
 
-        # Check for domain
-        elif re.match(self.domain_regex, line):
-            # Domain format: host:port
-            host_port = line.split(':')
-            host = host_port[0]
-            port = int(host_port[1]) if len(host_port) > 1 else None
-            
-            res = {
-                'host': host,
-                'port': port,
-                'origin': url
-            }
-
-        else:
-            res = {}
-
-        res['protocol'] = protocol
-
-        return res
+            return res
+        
+        except Exception as e:
+            return {}
 
 
     @handle_exceptions

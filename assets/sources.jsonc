@@ -79,7 +79,7 @@
     "https://raw.githubusercontent.com/zevtyardt/proxy-list/main/http.txt",
     "https://raw.githubusercontent.com/zloi-user/hideip.me/master/http.txt",
     "https://raw.githubusercontent.com/ZoniBoy00/proxy-lists/refs/heads/master/http_proxies.txt",
-    "https://www.proxy-list.download/api/v1/get?type=http",
+    "https://www.proxy-list.download/api/v1/get?type=http"
   ],
   "https": [
     "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-https.txt",
@@ -97,7 +97,7 @@
     "https://raw.githubusercontent.com/aslisk/proxyhttps/main/https.txt",
     "https://api.proxyscrape.com/?request=getproxies&proxytype=https&timeout=10000&country=all&ssl=all&anonymity=all",
     "https://proxyspace.pro/https.txt",
-    "https://raw.githubusercontent.com/zloi-user/hideip.me/master/https.txt",
+    "https://raw.githubusercontent.com/zloi-user/hideip.me/master/https.txt"
   ],
   "socks4": [
     "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4",
@@ -152,7 +152,7 @@
     "https://raw.githubusercontent.com/zevtyardt/proxy-list/main/socks4.txt",
     "https://raw.githubusercontent.com/zloi-user/hideip.me/master/socks4.txt",
     "https://raw.githubusercontent.com/ZoniBoy00/proxy-lists/refs/heads/master/socks4_proxies.txt",
-    "https://www.proxy-list.download/api/v1/get?type=socks4",
+    "https://www.proxy-list.download/api/v1/get?type=socks4"
   ],
   "socks5": [
     "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt",
