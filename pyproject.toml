@@ -19,16 +19,3 @@ dependencies = [
     "aiohappyeyeballs>=2.4.4",
     "tomli>=2.2.1",
 ]
-
-[tool.sources]
-http_proxy_list = [
-    "https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/refs/heads/main/http.txt"
-]
-
-socks4_proxy_list = [
-    "https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/refs/heads/main/socks4.txt"
-]
-
-socks5_proxy_list = [
-    "https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/refs/heads/main/socks5.txt"
-]

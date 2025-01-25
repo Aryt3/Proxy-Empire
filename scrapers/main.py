@@ -11,10 +11,6 @@ class ProxyScraper:
         self.socks4_proxy_urls = socks4_proxy_list
         self.socks5_proxy_urls = socks5_proxy_list
 
-        self.http_proxies = []
-        self.socks4_proxies = []
-        self.socks5_proxies = []
-
         self.timeout_secs = 5
         self.timeout = ClientTimeout(total=self.timeout_secs)
         self.semaphore = asyncio.Semaphore(max_concurrent_checks)
@@ -22,7 +18,6 @@ class ProxyScraper:
         self.ipv4_regex = r'^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)'
         self.ipv6_regex = r'^([0-9a-fA-F]{1,4}:){7}([0-9a-fA-F]{1,4})'
         self.domain_regex = r'^(?!-)[A-Za-z0-9-]{1,63}(?<!-)\.(?!-)[A-Za-z0-9-]{2,}\.?'
-
 
     def _extract_proxy(self, line: str, url: str, protocol):
         '''
