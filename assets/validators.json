@@ -1,0 +1,26 @@
+{
+    "ip_validators": [
+        "http://ipinfo.io/json",
+        "http://ipinfo.io/ip",
+        "https://checkip.amazonaws.com",
+        "http://httpbin.org/ip",
+        "https://httpbin.org/ip",
+        "https://httpbin.smp.io/ip",
+        "https://fingerprint.scrapoxy.io/api/text",
+
+        "https://wtfismyip.com/text",
+        "http://api.ipify.org/",
+        "http://ipv4.icanhazip.com/",
+        "http://myexternalip.com/raw",
+        "http://ifconfig.io/ip",
+
+        "http://httpbin.org/get?show_env",
+        "https://httpbin.org/get?show_env",
+        "http://azenv.net/",
+        "https://www.proxy-listen.de/azenv.php",
+        "http://www.proxyfire.net/fastenv",
+        "http://proxyjudge.us/azenv.php",
+        "http://ip.spys.ru/",
+        "http://www.proxy-listen.de/azenv.php"
+    ]
+}

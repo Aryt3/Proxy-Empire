@@ -40,3 +40,8 @@ class Proxy_Origin_Schema(BaseModel):
     pid: str
     ts: int
     source: str
+
+class Validator_Schema(BaseModel):
+    url: str
+    response: str | dict
+    content_type: str
