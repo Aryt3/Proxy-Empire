@@ -16,68 +16,29 @@ class ProxyScraper:
         self.timeout = ClientTimeout(total=self.timeout_secs)
         self.semaphore = asyncio.Semaphore(max_concurrent_checks)
 
-        self.ipv4_regex = r'^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)'
-        self.ipv6_regex = r'^([0-9a-fA-F]{1,4}:){7}([0-9a-fA-F]{1,4})'
-        self.domain_regex = r'^(?!-)[A-Za-z0-9-]{1,63}(?<!-)\.(?!-)[A-Za-z0-9-]{2,}\.?'
+        self.proxy_regex = [
+            r"((?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])(?:\.(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}):([0-9]{1,5})"
+        ]
 
 
-    def _extract_proxy(self, line: str, url: str, protocol):
-        '''
-        Helper-Function to return a parsed proxy as dictionary
-        '''
+    def _extract_proxies(self, text: str, url: str, protocol: str):
+        """
+        Extract proxies from text and return them as a list of dictionaries.
+        """
 
-        try:
-            print(line, url)
+        proxies = []
 
-            # Check for IPv4
-            if re.match(self.ipv4_regex, line):
-                # IPv4 format: host:port
-                res = {
-                    'host': line.split(':')[0],
-                    'port': int(line.split(':')[1]),
-                    'origin': url
-                }
+        for pattern in self.proxy_regex:
+            matches = re.findall(pattern, text)
 
-            # Check for IPv6
-            elif re.match(self.ipv6_regex, line):
-                # IPv6 format: [host]:port
-                # Note: IPv6 addresses are enclosed in brackets, e.g., [2001:db8::1]:8080
-                if ':' in line:
-                    host_port = line.split(']')  # Split by closing bracket
-                    host = host_port[0][1:]  # Remove the opening '['
-                    port = int(host_port[1][1:])  # Remove the ':'
-                else:
-                    host = line
-                    port = None
-
-                res = {
+            for host, port in matches:
+                proxies.extend([{
                     'host': host,
                     'port': port,
-                    'origin': url,
-                }
+                    'protocol': protocol
+                }])
 
-            # Check for domain
-            elif re.match(self.domain_regex, line):
-                # Domain format: host:port
-                host_port = line.split(':')
-                host = host_port[0]
-                port = int(host_port[1]) if len(host_port) > 1 else None
-                
-                res = {
-                    'host': host,
-                    'port': port,
-                    'origin': url
-                }
-
-            else:
-                res = {}
-
-            res['protocol'] = protocol
-
-            return res
-        
-        except Exception as e:
-            return {}
+        return proxies
 
 
     @handle_exceptions
@@ -90,7 +51,7 @@ class ProxyScraper:
             text = await response.text()
 
             # Return stripped proxies from the URL along with the source URL
-            return [self._extract_proxy(line.strip(), url, protocol) for line in text.splitlines() if line.strip()]
+            return self._extract_proxies(text, url, protocol)
 
 
     @handle_exceptions
@@ -98,6 +59,7 @@ class ProxyScraper:
         '''
         Collect all proxies from URLs and check their usability asynchronously.
         '''
+
         async with aiohttp.ClientSession() as session:
             # Create tasks for each proxy URL to fetch proxies concurrently
             tasks = []
@@ -109,7 +71,9 @@ class ProxyScraper:
             all_proxies = await asyncio.gather(*tasks)
 
             # Flatten the list of proxies from all URLs along with their source
-            all_proxies = [proxy for sublist in all_proxies for proxy in sublist]
+            all_proxies = [proxy for sublist in all_proxies if sublist for proxy in sublist if proxy]
+
+            print(all_proxies)
 
         return all_proxies
     
@@ -122,7 +86,17 @@ class ProxyScraper:
 
         proxies = await self.collect_txt_files()
 
-        await ProxyStore().batch_add_proxies([Proxy_Schema(**proxy) for proxy in proxies])
+        print(len(proxies))
+
+        # Deduplicate by using a set of tuples
+        unique_proxies = list({(proxy['host'], proxy['port'], proxy['protocol']) for proxy in proxies})
+
+        # Convert back to a list of dictionaries
+        unique_proxies = [{'host': host, 'port': port, 'protocol': protocol} for host, port, protocol in unique_proxies]
+
+        print(len(unique_proxies))
+
+        await ProxyStore().batch_add_proxies([Proxy_Schema(**proxy) for proxy in unique_proxies])
 
         asyncio.create_task(ProxyValidator().run_validators())
 
