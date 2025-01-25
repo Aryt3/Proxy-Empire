@@ -5,16 +5,30 @@ description = "A tool to periodically fetch new proxies from various sources, va
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "pydantic==2.10.6",
-    "pydantic-core==2.27.2",
-    "typing-extensions==4.12.2",
-    "sqlalchemy==2.0.37",
-    "requests==2.32.3",
-    "python-socks==2.6.1",
-    "annotated-types==0.7.0",
-    "aiosqlite==0.20.0",
-    "aiosignal==1.3.2",
-    "aiohttp-socks==0.10.1",
-    "aiohttp==3.11.11",
-    "aiohappyeyeballs==2.4.4"
+    "pydantic>=2.10.6",
+    "pydantic-core>=2.27.2",
+    "typing-extensions>=4.12.2",
+    "sqlalchemy>=2.0.37",
+    "requests>=2.32.3",
+    "python-socks>=2.6.1",
+    "annotated-types>=0.7.0",
+    "aiosqlite>=0.20.0",
+    "aiosignal>=1.3.2",
+    "aiohttp-socks>=0.10.1",
+    "aiohttp>=3.11.11",
+    "aiohappyeyeballs>=2.4.4",
+    "tomli>=2.2.1",
+]
+
+[tool.sources]
+http_proxy_list = [
+    "https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/refs/heads/main/http.txt"
+]
+
+socks4_proxy_list = [
+    "https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/refs/heads/main/socks4.txt"
+]
+
+socks5_proxy_list = [
+    "https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/refs/heads/main/socks5.txt"
 ]

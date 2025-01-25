@@ -15,16 +15,16 @@ class Proxy(Base):
 
     __tablename__ = 'proxies'
 
-    id = Column(String(length=255), primary_key=True, default=lambda: str(uuid4()), unique=True) 
-    host = Column(String(length=255), nullable=False) 
+    id = Column(String(length=1024), primary_key=True, default=lambda: str(uuid4()), unique=True) 
+    host = Column(String(length=1024), nullable=False) 
     port = Column(Integer(), nullable=False) 
     protocol = Column(Enum(ProtocolEnum), nullable=False) 
-    anonymity = Column(String(length=255), nullable=True) 
+    anonymity = Column(String(length=1024), nullable=True) 
     country = Column(Enum(CountryEnum), nullable=True) 
     latency = Column(Integer(), nullable=True) # Latency in ms
-    secret = Column(String(length=255), nullable=True)
+    secret = Column(String(length=1024), nullable=True)
     last_ts = Column(Integer(), nullable=True) # Unix-Timestamp
-    ip_score = Column(String(length=255), nullable=True)
+    ip_score = Column(String(length=1024), nullable=True)
     active = Column(Boolean(), nullable=False)
 
     def __repr__(self):
@@ -39,10 +39,26 @@ class Update(Base):
 
     __tablename__ = 'updates'
 
-    id = Column(String(length=255), primary_key=True, default=lambda: str(uuid4()), unique=True)
-    pid = Column(String(length=255), ForeignKey('proxies.id'), nullable=False)
+    id = Column(String(length=1024), primary_key=True, default=lambda: str(uuid4()), unique=True)
+    pid = Column(String(length=1024), ForeignKey('proxies.id'), nullable=False)
     ts = Column(BigInteger, nullable=False) # Unix-Timestamp
     latency = Column(Integer(), nullable=False) # Latency in ms
 
     def __repr__(self):
         return f'Update(id={self.id}, pid={self.pid}, ts={self.ts}, latency={self.latency})'
+
+
+class Proxy_Origin(Base):
+    '''
+    Database Table to store Origin/Source of a Proxy
+    '''
+
+    __tablename__ = 'proxy_origins'
+
+    id = Column(String(length=1024), primary_key=True, default=lambda: str(uuid4()), unique=True)
+    pid = Column(String(length=1024), ForeignKey('proxies.id'), nullable=False)
+    ts = Column(BigInteger, nullable=False) # Unix-Timestamp
+    source = Column(String(length=1024)) # An URL in most cases
+
+    def __repr__(self):
+        return f'Update(id={self.id}, pid={self.pid}, ts={self.ts}, source={self.source})'

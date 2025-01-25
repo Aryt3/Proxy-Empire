@@ -22,15 +22,20 @@ class Proxy_Schema(BaseModel):
     host: str
     port: int
     protocol: ProtocolEnum
-    anonymity: Optional[bool]
-    country: Optional[CountryEnum]
-    latency: Optional[int]
-    secret: Optional[str]
-    last_ts: Optional[int]
-    ip_score: Optional[str]
-    active: Optional[bool]
+    anonymity: Optional[bool] = None
+    country: Optional[CountryEnum] = None
+    latency: Optional[int] = None
+    secret: Optional[str] = None
+    last_ts: Optional[int] = None
+    ip_score: Optional[str] = None
+    active: Optional[bool] = False
 
 class Update_Schema(BaseModel):
     pid: str
     ts: int
     latency: int
+
+class Proxy_Origin_Schema(BaseModel):
+    pid: str
+    ts: int
+    source: str

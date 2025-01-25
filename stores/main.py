@@ -3,12 +3,14 @@ from sqlalchemy.sql import and_
 from stores.model.database import DBAsyncSession
 from stores.model.models import (
     Proxy,
-    Update
+    Update,
+    Proxy_Origin
 )
 from stores.model.schemas import (
     Proxy_Schema,
     Proxy_Filter_Schema,
-    Update_Schema
+    Update_Schema,
+    Proxy_Origin_Schema
 )
 from stores.model.data_classes import (
     ProtocolEnum,
@@ -130,6 +132,39 @@ class ProxyStore:
             ))
             await db.commit()
 
+        return
+    
+
+    @handle_exceptions
+    async def batch_add_proxies(self, proxies: list[Proxy_Schema]):
+        '''
+        Function to add a batch of proxies
+        '''
+
+        async with DBAsyncSession() as db:
+            # Create a list of Proxy objects
+            proxy_objects = [
+                Proxy(
+                    host=proxy.host,
+                    port=proxy.port,
+                    protocol=ProtocolEnum(proxy.protocol),
+                    anonymity=proxy.anonymity,
+                    country=CountryEnum(proxy.country),
+                    latency=proxy.latency,
+                    secret=proxy.secret,
+                    last_ts=proxy.last_ts,
+                    ip_score=proxy.ip_score,
+                    active=proxy.active
+                ) for proxy in proxies
+            ]
+            
+            # Add all proxies at once
+            db.add_all(proxy_objects)
+
+            await db.commit()
+        
+        return
+
 
     @handle_exceptions
     async def update_proxy(self, proxy_update: Update_Schema):
@@ -144,3 +179,34 @@ class ProxyStore:
                 latency=proxy_update.latency
             ))
             await db.commit()
+
+        return
+    
+
+    @handle_exceptions
+    async def add_origin(self, proxy_origin: Proxy_Origin_Schema):
+        '''
+        Function to add origin/source of an existing proxy
+        '''
+
+        async with DBAsyncSession() as db:
+            # Check if Proxy_Origin with same pid and source already exists
+            existing_origin = await db.execute(
+                select(Proxy_Origin).filter(
+                    Proxy_Origin.pid == proxy_origin.pid,
+                    Proxy_Origin.source == proxy_origin.source
+                )
+            )
+            existing_origin = existing_origin.scalars().first()
+
+            if existing_origin:
+                return 
+            
+            # add new origin if it doesn't exist
+            db.add(Proxy_Origin(
+                pid=proxy_origin.pid,
+                ts=proxy_origin.ts,
+                source=proxy_origin.source
+            ))
+
+        return
