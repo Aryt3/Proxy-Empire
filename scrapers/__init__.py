@@ -4,10 +4,12 @@ def load_sources(sources_path):
     '''
     Load Scraping sources from assets/sources.json
     '''
+
     with open(sources_path, 'r') as file:
         sources = json.load(file)
 
     return sources
+
 
 def rm_duplicates(sources_path):
     '''
