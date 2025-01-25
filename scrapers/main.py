@@ -7,7 +7,7 @@ from stores.model.schemas import Proxy_Schema
 from validators.main import ProxyValidator
 
 class ProxyScraper:
-    def __init__(self, max_concurrent_checks: int = 50):
+    def __init__(self, max_concurrent_checks: int = 100):
         self.http_proxy_urls = http_proxy_list
         self.socks4_proxy_urls = socks4_proxy_list
         self.socks5_proxy_urls = socks5_proxy_list
@@ -34,7 +34,7 @@ class ProxyScraper:
             for host, port in matches:
                 proxies.extend([{
                     'host': host,
-                    'port': port,
+                    'port': int(port),
                     'protocol': protocol
                 }])
 
@@ -73,8 +73,6 @@ class ProxyScraper:
             # Flatten the list of proxies from all URLs along with their source
             all_proxies = [proxy for sublist in all_proxies if sublist for proxy in sublist if proxy]
 
-            print(all_proxies)
-
         return all_proxies
     
 
@@ -86,7 +84,7 @@ class ProxyScraper:
 
         proxies = await self.collect_txt_files()
 
-        print(len(proxies))
+        print(f'[+] Scraped {len(proxies)} Proxies')
 
         # Deduplicate by using a set of tuples
         unique_proxies = list({(proxy['host'], proxy['port'], proxy['protocol']) for proxy in proxies})
@@ -94,9 +92,13 @@ class ProxyScraper:
         # Convert back to a list of dictionaries
         unique_proxies = [{'host': host, 'port': port, 'protocol': protocol} for host, port, protocol in unique_proxies]
 
-        print(len(unique_proxies))
+        print(f'[+] Filtered {len(unique_proxies)} unique Proxies')
 
-        await ProxyStore().batch_add_proxies([Proxy_Schema(**proxy) for proxy in unique_proxies])
+        working_proxies = await ProxyValidator().validate_proxies(unique_proxies)
+
+        print(f'[+] Found {len(working_proxies)} active Proxies')
+
+        await ProxyStore().batch_add_proxies([Proxy_Schema(**proxy) for proxy in working_proxies])
 
         asyncio.create_task(ProxyValidator().run_validators())
 
