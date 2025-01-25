@@ -1,6 +1,7 @@
 import json, aiohttp, asyncio
 from aiohttp_socks import ProxyConnector
 from aiohttp import ClientTimeout
+from utils import handle_exceptions
 
 class ProxyValidator:
     def __init__(self, max_concurrent_checks: int = 50):
@@ -15,3 +16,12 @@ class ProxyValidator:
         '''
 
         return 
+    
+
+    @handle_exceptions
+    async def run_validators(self):
+        '''
+        Function to start application workflow of validating proxies
+        '''
+
+        return

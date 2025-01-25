@@ -4,6 +4,7 @@ from scrapers import http_proxy_list, socks4_proxy_list, socks5_proxy_list
 from utils import handle_exceptions
 from stores.main import ProxyStore
 from stores.model.schemas import Proxy_Schema
+from validators.main import ProxyValidator
 
 class ProxyScraper:
     def __init__(self, max_concurrent_checks: int = 50):
@@ -116,20 +117,6 @@ class ProxyScraper:
 
         await ProxyStore().batch_add_proxies([Proxy_Schema(**proxy) for proxy in proxies])
 
-        return
-
-        tasks = []
-
-        tasks.extend([
-            ProxyStore().add_proxy(Proxy_Schema(
-                host=proxy.get('host'),
-                port=proxy.get('port'),
-                protocol=proxy.get('protocol'),
-                active=False
-            )) 
-            for proxy in proxies
-        ])
-
-        await asyncio.gather(*tasks)
+        asyncio.create_task(ProxyValidator().run_validators())
 
         return
