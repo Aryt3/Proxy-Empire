@@ -1,16 +1,19 @@
-import aiohttp, asyncio, re
+import aiohttp
+import asyncio
+import re
 from aiohttp import ClientTimeout
-from scrapers import http_proxy_list, socks4_proxy_list, socks5_proxy_list
+from scrapers import http_proxy_list, https_proxy_list, socks4_proxy_list, socks5_proxy_list
 from utils import handle_exceptions
 from stores.main import ProxyStore
 from stores.model.schemas import Proxy_Schema
 from validators.main import ProxyValidator
 
 class ProxyScraper:
-    def __init__(self, max_concurrent_checks: int = 100):
-        self.http_proxy_urls = http_proxy_list
-        self.socks4_proxy_urls = socks4_proxy_list
-        self.socks5_proxy_urls = socks5_proxy_list
+    def __init__(self, max_concurrent_checks: int = 50):
+        self.http_proxy_list = http_proxy_list
+        self.https_proxy_list = https_proxy_list
+        self.socks4_proxy_list = socks4_proxy_list
+        self.socks5_proxy_list = socks5_proxy_list
 
         self.timeout_secs = 5
         self.timeout = ClientTimeout(total=self.timeout_secs)
@@ -55,7 +58,7 @@ class ProxyScraper:
 
 
     @handle_exceptions
-    async def collect_txt_files(self):
+    async def static_web_scraper(self):
         '''
         Collect all proxies from URLs and check their usability asynchronously.
         '''
@@ -63,9 +66,10 @@ class ProxyScraper:
         async with aiohttp.ClientSession() as session:
             # Create tasks for each proxy URL to fetch proxies concurrently
             tasks = []
-            tasks.extend([self.fetch_proxies(session, url, 'http') for url in self.http_proxy_urls])
-            tasks.extend([self.fetch_proxies(session, url, 'socks4') for url in self.socks4_proxy_urls])
-            tasks.extend([self.fetch_proxies(session, url, 'socks5') for url in self.socks5_proxy_urls])
+            tasks.extend([self.fetch_proxies(session, url, 'http') for url in self.http_proxy_list])
+            tasks.extend([self.fetch_proxies(session, url, 'https') for url in self.https_proxy_list])
+            tasks.extend([self.fetch_proxies(session, url, 'socks4') for url in self.socks4_proxy_list])
+            tasks.extend([self.fetch_proxies(session, url, 'socks5') for url in self.socks5_proxy_list])
 
             # Run all tasks in parallel and await their completion
             all_proxies = await asyncio.gather(*tasks)
@@ -77,14 +81,13 @@ class ProxyScraper:
     
 
     @handle_exceptions
-    async def run_scrapers(self):
+    async def scrape_all(self):
         '''
         Function to start application workflow of gathering proxies
         '''
 
-        proxies = await self.collect_txt_files()
-
-        print(f'[+] Scraped {len(proxies)} Proxies')
+        proxies = await self.static_web_scraper()
+        print("[info] Scraped",len(proxies),"from open web sources")
 
         # Deduplicate by using a set of tuples
         unique_proxies = list({(proxy['host'], proxy['port'], proxy['protocol']) for proxy in proxies})
