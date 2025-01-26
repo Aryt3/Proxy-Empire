@@ -45,3 +45,12 @@ class Validator_Schema(BaseModel):
     url: str
     response: str | dict
     content_type: str
+    latency: float
+    usable: bool | None
+
+class Validator_Usage_Schema(BaseModel):
+    url: str
+    type: str
+    json_key: str| None
+    latency: float
+    usable: bool | None

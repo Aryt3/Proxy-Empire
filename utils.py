@@ -1,6 +1,28 @@
 import functools
 import asyncio
 
+def silence(func):
+    '''
+    Function to silence any errors from scraping functions etc...
+    '''
+
+    @functools.wraps(func)
+    async def async_wrapper(*args, **kwargs):
+        try:
+            return await func(*args, **kwargs)
+        except Exception as e:
+            return None
+
+    @functools.wraps(func)
+    def sync_wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            return None
+        
+    # Check if the function is async
+    return async_wrapper if asyncio.iscoroutinefunction(func) else sync_wrapper
+
 def handle_exceptions(func):
     """
     This decorator catches exceptions raised by both synchronous
@@ -12,8 +34,7 @@ def handle_exceptions(func):
         try:
             return await func(*args, **kwargs)
         except Exception as e:
-            # print(f'Error occurred in {func.__name__}: {e}')
-            # Log Exception
+            print(f'[!] Error occurred in {func.__name__}: {e}')
             return None
 
     @functools.wraps(func)
@@ -21,12 +42,8 @@ def handle_exceptions(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            # print(f'Error occurred in {func.__name__}: {e}')
-            # Log Exception
+            print(f'[!] Error occurred in {func.__name__}: {e}')
             return None
 
     # Check if the function is async
-    if asyncio.iscoroutinefunction(func):
-        return async_wrapper
-    else:
-        return sync_wrapper
+    return async_wrapper if asyncio.iscoroutinefunction(func) else sync_wrapper

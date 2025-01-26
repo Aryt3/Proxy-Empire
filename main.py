@@ -5,7 +5,5 @@ from validators.validators import Validator
 
 parent_directory = Path(__file__).parent
 
-PUBLIC_IP, validators = asyncio.run(Validator().sort_validators())
-
 if __name__ == '__main__':
-    pass
+    asyncio.run(ProxyScraper().run_scrapers())

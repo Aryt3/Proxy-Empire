@@ -1,9 +1,7 @@
-import aiohttp
-import asyncio
-import re
+import aiohttp, asyncio, re
 from aiohttp import ClientTimeout
 from scrapers import http_proxy_list, https_proxy_list, socks4_proxy_list, socks5_proxy_list
-from utils import handle_exceptions
+from utils import handle_exceptions, silence
 from stores.main import ProxyStore
 from stores.model.schemas import Proxy_Schema
 from validators.main import ProxyValidator
@@ -24,6 +22,7 @@ class ProxyScraper:
         ]
 
 
+    @silence
     def _extract_proxies(self, text: str, url: str, protocol: str):
         """
         Extract proxies from text and return them as a list of dictionaries.
@@ -44,7 +43,7 @@ class ProxyScraper:
         return proxies
 
 
-    @handle_exceptions
+    @silence
     async def fetch_proxies(self, session, url, protocol):
         '''
         Fetch proxies from a URL asynchronously
@@ -81,13 +80,13 @@ class ProxyScraper:
     
 
     @handle_exceptions
-    async def scrape_all(self):
+    async def run_scrapers(self):
         '''
         Function to start application workflow of gathering proxies
         '''
 
         proxies = await self.static_web_scraper()
-        print("[info] Scraped",len(proxies),"from open web sources")
+        print("[?] Scraped",len(proxies),"from open web sources")
 
         # Deduplicate by using a set of tuples
         unique_proxies = list({(proxy['host'], proxy['port'], proxy['protocol']) for proxy in proxies})

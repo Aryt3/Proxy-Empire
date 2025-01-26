@@ -1,8 +1,8 @@
-from utils import handle_exceptions
-import json, aiohttp, asyncio, re
+from utils import handle_exceptions, silence
+import json, aiohttp, asyncio, re, time
 from aiohttp import ClientTimeout, ClientResponseError
 from collections import Counter
-from stores.model.schemas import Validator_Schema
+from stores.model.schemas import Validator_Schema, Validator_Usage_Schema
 
 class Validator():
 
@@ -14,6 +14,22 @@ class Validator():
 
         self.validators = {}
     
+
+    @handle_exceptions
+    def _filter_validators(self, validators: list[Validator_Schema]):
+        '''
+        Function to get the top-5 validators
+        '''
+
+        # Filter by `usable == True`
+        filtered = [entry for entry in validators if entry.usable]
+
+        # Sort by `latency` in ascending order
+        sorted_by_latency = sorted(filtered, key=lambda x: x.latency)
+
+        # Return top 5 entries with the least latency
+        return sorted_by_latency[:5]
+
 
     @handle_exceptions
     async def get_public_ip(self, responses):
@@ -52,7 +68,8 @@ class Validator():
             'url': validator.url,
             'type': 'json' if 'application/json' in validator.content_type else 'text',
             'json_key': None,
-            'usable': True
+            'usable': True,
+            'latency': validator.latency
         }
 
         if validator.content_type == 'application/json':
@@ -73,6 +90,7 @@ class Validator():
     
         return val
 
+
     @handle_exceptions
     async def fetch_validator_data(self, validator):
         '''
@@ -80,7 +98,10 @@ class Validator():
         '''
         
         async with aiohttp.ClientSession() as session:
+            start_time = time.monotonic()
             async with session.get(validator, timeout=self.timeout) as response:
+                elapsed_time = time.monotonic() - start_time
+
                 content_type = response.headers.get('Content-Type', '').split(';')[0].strip().lower()
 
                 response = await response.json() if content_type == 'application/json' else await response.text()
@@ -89,6 +110,8 @@ class Validator():
                     'url': validator,
                     'response': response,
                     'content_type': content_type,
+                    'latency': elapsed_time,
+                    'usable': None
                 }
     
 
@@ -106,7 +129,9 @@ class Validator():
         self.public_ip = await self.get_public_ip(responses)
         validators = [self._check_response(Validator_Schema(**res)) for res in responses]
 
-        return (self.public_ip, validators)
+        validators = [Validator_Usage_Schema(**validator) for validator in validators]
+
+        return (self.public_ip, self._filter_validators(validators))
 
 
     @handle_exceptions
