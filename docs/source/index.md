@@ -4,7 +4,7 @@
 This project is under active development.
 ```
 
-# Proxy-Broker
+# Proxy-Empire
 A tool to periodically fetch new proxies from various sources, validate and filter them and provide them for further usage
 
 ```{toctree}
