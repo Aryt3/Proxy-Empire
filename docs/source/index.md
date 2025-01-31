@@ -4,9 +4,8 @@
 This project is under active development.
 ```
 
-```{include} ../../README.md
-:relative-images:
-```
+# Proxy-Broker
+A tool to periodically fetch new proxies from various sources, validate and filter them and provide them for further usage
 
 ```{toctree}
 :caption: Table of Contents

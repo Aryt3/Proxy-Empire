@@ -1,5 +1,5 @@
 # Proxy-Empire
-[![Documentation Status][rtd-badge]][https://myst-parser.readthedocs.io/en/latest/?badge=latest]
+![ReadTheDocs](https://readthedocs.org/projects/proxy-empire/badge/?version=latest)
 
 A tool to periodically fetch new proxies from various sources, validate and filter them and provide them for further usage.
 
