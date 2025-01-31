@@ -1,4 +1,6 @@
 __pycache__/
+docs/build/
+docs/_build/
 *.db
 .env
 .venv
