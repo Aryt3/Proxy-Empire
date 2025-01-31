@@ -34,3 +34,6 @@ doc = [
 dev = [
     "sphinx-autobuild>=2024.10.3",
 ]
+
+[tool.setuptools]
+py-modules = []
