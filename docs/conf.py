@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Proxy-Empire'
-copyright = '2025, Aryt3 and 54toshi'
-author = 'Aryt3 and 54toshi'
-release = '0.1'
+project = "Proxy-Empire"
+copyright = "2025, Aryt3 and 54toshi"
+author = "Aryt3 and 54toshi"
+release = "0.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -17,17 +17,17 @@ release = '0.1'
 extensions = [
     "myst_parser",
     "sphinxext.opengraph",
-    'sphinx_sitemap',
+    "sphinx_sitemap",
     "sphinx_copybutton",
 ]
 
-language = 'en'
-master_doc = 'index'
-pygments_style = 'sphinx'
-source_suffix = '.md'
-templates_path = ['_templates']
+language = "en"
+master_doc = "index"
+pygments_style = "sphinx"
+source_suffix = ".md"
+templates_path = ["_templates"]
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = []
 
 
@@ -53,10 +53,10 @@ myst_html_meta = {
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'furo'
+html_theme = "furo"
 html_title = "Proxy-Empire"
-# html_favicon = 'static/favicon.png'
-html_baseurl = 'https://my-site.com/docs/'
+# html_favicon = "static/favicon.png"
+html_baseurl = "https://proxy-empire.readthedocs.io/"
 html_theme_options = {
 #    "light_css_variables": {
 #        "color-brand-primary": "red",
@@ -66,4 +66,4 @@ html_theme_options = {
 #    "announcement": "<em>Important</em> announcement!",
 }
 # html_logo = "logo.png"
-html_static_path = ['_static']
+html_static_path = ["_static"]

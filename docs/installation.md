@@ -1,5 +1,4 @@
-
-# Installation
+## Installation
 
 ```sh
 pipx install Proxy-Empire
